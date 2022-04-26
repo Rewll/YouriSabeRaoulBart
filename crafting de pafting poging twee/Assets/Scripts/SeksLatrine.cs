@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class SeksLatrine : MonoBehaviour
 {
-    public Test testingSERKS;   
-
+    public IngredientenObject testingSERKS;
+    SpriteRenderer SR;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(testingSERKS.roekoe[1]);
+        SR = GetComponent<SpriteRenderer>();
+        SR.sprite = testingSERKS.sprite;
+        gameObject.name = testingSERKS.name;    
     }
 
     // Update is called once per frame
