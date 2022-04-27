@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] Transform playerTransform;
+    public GameObject _Hand1;
+    public GameObject pickUpObjectText;
+    public GameObject handsFullText;
+    public KeyCode _Key;
+    
     [SerializeField] int movementSpeed = 5;
     [SerializeField] int rotationSpeed = 5;
+    [SerializeField] bool inHand1 = false;
 
     // Update is called once per frame
     void Update()
@@ -23,5 +30,38 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(rotateDirection.x, rotateDirection.y) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (inHand1 == false)
+        {
+            pickUpObjectText.SetActive(true);
+        }
+
+        else
+        {
+            handsFullText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (Input.GetKey(_Key))
+        {
+            if (inHand1 == false)
+            {
+                collision.transform.position = _Hand1.transform.position;
+                collision.transform.rotation = _Hand1.transform.rotation;
+                collision.transform.SetParent(_Hand1.transform);
+                inHand1 = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        pickUpObjectText.SetActive(false);
+        handsFullText.SetActive(false);
     }
 }
