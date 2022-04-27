@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb6c2252a65b074597ae0a6fd812962, type: 3}
+  m_Name: I2
+  m_EditorClassIdentifier: 
+  potionSprite: {fileID: 21300000, guid: f0aa86aff0d2c0341b0fea5c2e575ac6, type: 3}
+  potionColor: {r: 1, g: 0, b: 0.31764707, a: 1}
+  potionGroup:
+  - Animal
+  effects:
+  - allEffects: 1
+    addAmount: 1
