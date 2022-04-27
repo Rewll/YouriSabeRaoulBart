@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
+   
     //Temp testing
     [SerializeField] private PotionIngredient potionIngredient;
     [SerializeField] private PotionIngredient potionIngredient2;
@@ -57,11 +58,36 @@ public class Cauldron : MonoBehaviour
     }
     private void AddFunctionToBrew(GameObject newPotion) 
     {
+        //Debug.Log("Seks?");
         foreach (var newEffect in brewEffects)
         {
-            AbstactSideEffect temp = sideEffects[((int)newEffect.allEffects)];
-            var tempo = newPotion.AddComponent<Cauldron>();
-            tempo = temp; 
+            //VeelSuc6 Raoul
+            if(newEffect.allEffects == AllEffects.speed) 
+            {
+                var temp = newPotion.GetComponent<SpeedEffect>();
+                if (temp) 
+                {
+                   temp.EffectCount(newEffect.addAmount);
+                }
+                else 
+                {
+                   temp = newPotion.AddComponent<SpeedEffect>();
+                   temp.EffectCount(newEffect.addAmount);
+                }
+            }
+            if (newEffect.allEffects == AllEffects.arm)
+            {
+                var temp = newPotion.GetComponent<ArmEffect>();
+                if (temp)
+                {
+                    temp.EffectCount(newEffect.addAmount);
+                }
+                else
+                {
+                    temp = newPotion.AddComponent<ArmEffect>();
+                    temp.EffectCount(newEffect.addAmount);
+                }
+            }
         }
     }
     private void AddEffectsToBrewList(List<Effect> ingredientEffect)

@@ -23,5 +23,4 @@ public enum AllEffects
 {
     speed,
     arm,
-    blind,
 }

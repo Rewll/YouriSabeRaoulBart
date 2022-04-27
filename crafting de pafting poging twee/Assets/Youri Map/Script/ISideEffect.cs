@@ -5,7 +5,7 @@ using UnityEngine;
 [SerializeField]
 public interface ISideEffect
 {
-    void EffectCount(int addedAmount);
+    void EffectCount(float addedAmount);
     void DrinkEffect();
     void ThrowEffect();
 }
