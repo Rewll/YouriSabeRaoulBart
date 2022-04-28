@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class bushScript : MonoBehaviour
 {
-    public UnityEvent verbanden;
+    public UnityEvent einde;
     public GameObject vuur;
     public void OnTriggerStay2D(Collider2D collision)
     {
@@ -13,7 +14,6 @@ public class bushScript : MonoBehaviour
         {
             if (collision.GetComponent<FireEffect>().gooien)
             {
-                verbanden.Invoke();
                 Debug.Log("Verbranden NU");
                 StartCoroutine(vuuur());
             }
@@ -24,6 +24,6 @@ public class bushScript : MonoBehaviour
     {
         vuur.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        Destroy(gameObject);
+        Destroy(gameObject);        
     }
 }
