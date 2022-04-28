@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(_Key))
         {
-            if (inHand1 == false)
+            if (inHand1 == false && collision.CompareTag("Ingredient"))
             {
                 collision.transform.position = _Hand1.transform.position;
                 collision.transform.rotation = _Hand1.transform.rotation;
