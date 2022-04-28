@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tulp
   m_EditorClassIdentifier: 
   potionSprite: {fileID: 0}
-  potionColor: {r: 0.8867924, g: 0.10373794, b: 0.10373794, a: 0}
+  potionColor: {r: 0.8867924, g: 0.10373794, b: 0.10373794, a: 1}
   potionGroup:
   - Plant
   effects: []

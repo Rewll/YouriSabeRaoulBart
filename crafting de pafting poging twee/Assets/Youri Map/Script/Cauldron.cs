@@ -26,6 +26,7 @@ public class Cauldron : MonoBehaviour
         if(IngredientColors.Count > 0) 
         {
             GameObject newPotion = Instantiate(gPotion);
+
             newPotion.GetComponent<SpriteRenderer>().color = BrewColor();
             AddFunctionToBrew(newPotion);
             AddMainEffect(newPotion);
@@ -114,7 +115,9 @@ public class Cauldron : MonoBehaviour
         //Main Effects
         if (brewGroup.Contains("Steen") && brewGroup.Contains("Plant")) 
         {
-            newPotion.AddComponent<FireEffect>();
+            var temp = newPotion.AddComponent<FireEffect>();
+            newPotion.GetComponent<PotionClass>().ThrowPotion.AddListener(temp.ThrowEffect);
+            newPotion.GetComponent<PotionClass>().DrinkPotion.AddListener(temp.DrinkEffect);
             return;
         }
     }

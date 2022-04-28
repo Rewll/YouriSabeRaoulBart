@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6920713029521317785}
   - component: {fileID: 6920713029521317787}
   - component: {fileID: -2788581021349736426}
+  - component: {fileID: 8694996513351989777}
   m_Layer: 0
   m_Name: Potion
   m_TagString: Potion
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8694996513351989777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6920713029521317764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7815423e8e552d74c8de8b2a30c388f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

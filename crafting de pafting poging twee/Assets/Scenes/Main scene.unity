@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eec4463889984747abef2d53329f287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionIngredientSO: {fileID: 11400000, guid: da5e08f747b1ed34d9087af35fe4e5b5, type: 2}
+  potionIngredientSO: {fileID: 11400000, guid: 130514ab9a2a47249b412306913350fe, type: 2}
   playerMovement: {fileID: 8660073177138299760}
 --- !u!61 &1052798889
 BoxCollider2D:
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eec4463889984747abef2d53329f287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionIngredientSO: {fileID: 11400000, guid: cb99219bffce6d04db5bce6e7e9ba32c, type: 2}
+  potionIngredientSO: {fileID: 11400000, guid: 08e04011ff6fe95499714876b5873a09, type: 2}
   playerMovement: {fileID: 8660073177138299760}
 --- !u!50 &451932709830876254
 Rigidbody2D:
@@ -750,6 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireCode: 0
+  potionClassReference: {fileID: 0}
   gPotion: {fileID: 6920713029521317764, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
 --- !u!61 &7681107830452100849
 BoxCollider2D:
