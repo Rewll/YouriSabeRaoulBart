@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 20324
+  controlID: 20522
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,9 +272,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.45979345, y: 3.1646779, z: -0.063927546}
+    m_Target: {x: 383.8604, y: 280.67932, z: -3.9115984}
     speed: 2
-    m_Value: {x: -0.45979345, y: 3.1646779, z: -0.063927546}
+    m_Value: {x: 394.27594, y: 271.45834, z: -4.114042}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -325,9 +325,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.084516
+    m_Target: 429.62857
     speed: 2
-    m_Value: 13.084516
+    m_Value: 449.87283
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 20325
+  controlID: 20523
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 20326
+  controlID: 20524
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1652ffff
-      m_LastClickedID: -44522
-      m_ExpandedIDs: ce84ffff4c85ffffb086fffffe8cffffdc90ffff12a4ffff64a4ffffc4baffff40bbffffb6d6ffff1edcffff7edcffff20ddffff60ddffffc8ddffffb2f5ffffa6f6ffff0ef7ffff48f8ffff10fbffff94610000b4610000bc6100007c87000084870000
+      m_SelectedIDs: 0640ffff
+      m_LastClickedID: -49146
+      m_ExpandedIDs: 4040ffff8e40ffffce84ffff4c85ffffb086fffffe8cffffdc90ffff12a4ffff64a4ffffc4baffff40bbffffb6d6ffff1edcffff7edcffff20ddffff60ddffffc8ddffffb2f5ffffa6f6ffff0ef7ffff48f8ffff10fbffff94610000b4610000bc6100007c87000084870000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -672,13 +672,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/RaoulMap
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/RaoulMap
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\raoul\OneDrive\Documents\HKU\Jaar 2\Kernmodule level
     design\GIT\YouriSabeRaoulBart\crafting de pafting poging twee
@@ -686,8 +686,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 51}
-    m_SelectedIDs: 92600000
-    m_LastClickedID: 24722
+    m_SelectedIDs: 4a600000
+    m_LastClickedID: 24650
     m_ExpandedIDs: 00000000426000004a6000005260000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -741,9 +741,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1652ffff
-    m_LastClickedInstanceID: -44522
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 0640ffff
+    m_LastClickedInstanceID: -49146
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
