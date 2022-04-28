@@ -6,8 +6,8 @@ public class Cauldron : MonoBehaviour
 {
    
     //Temp testing
-    [SerializeField] private PotionIngredient potionIngredient;
-    [SerializeField] private PotionIngredient potionIngredient2;
+    //[SerializeField] private PotionIngredient potionIngredient;
+    //[SerializeField] private PotionIngredient potionIngredient2;
     [SerializeField] private bool fireCode;
 
     [Header("PotionSettings")]
@@ -15,12 +15,6 @@ public class Cauldron : MonoBehaviour
     [SerializeField] private List<Color> IngredientColors;
     [SerializeField] private List<Effect> brewEffects;
     [SerializeField] private List<AbstactSideEffect> sideEffects;
-
-    private void Start()
-    {
-        AddIngredient(potionIngredient);
-        AddIngredient(potionIngredient2);
-    }
 
     private void Update()
     {
