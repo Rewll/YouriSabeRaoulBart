@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25e20078c1de4c848b08fa28b3ef38d8, type: 3}
-  m_Name: Karnemelk
+  m_Script: {fileID: 11500000, guid: ecb6c2252a65b074597ae0a6fd812962, type: 3}
+  m_Name: Tulp
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: f0aa86aff0d2c0341b0fea5c2e575ac6, type: 3}
-  kleurtje: {r: 1, g: 0.17358488, b: 0.38525438, a: 0}
+  potionSprite: {fileID: 0}
+  potionColor: {r: 0, g: 0, b: 0, a: 0}
+  potionGroup: []
+  effects: []
