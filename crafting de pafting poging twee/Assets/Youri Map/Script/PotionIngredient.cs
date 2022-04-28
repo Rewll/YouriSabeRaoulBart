@@ -15,11 +15,11 @@ public class PotionIngredient : ScriptableObject
 [System.Serializable]
 public class Effect 
 {
-    public AllEffects allEffects;
+    public SideEffects allEffects;
     public float addAmount;
 }
 
-public enum AllEffects
+public enum SideEffects
 {
     speed,
     arm,

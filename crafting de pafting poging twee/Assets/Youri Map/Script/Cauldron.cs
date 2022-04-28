@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-   
-    //Temp testing
-    //[SerializeField] private PotionIngredient potionIngredient;
-    //[SerializeField] private PotionIngredient potionIngredient2;
     [SerializeField] private bool fireCode;
 
     [Header("PotionSettings")]
     [SerializeField] private GameObject gPotion;
     private List<Color> IngredientColors = new List<Color>();
     private List<Effect> brewEffects = new List<Effect>();
+    private List<string> brewGroup = new List<string>();
 
     private void Update()
     {
@@ -31,6 +28,7 @@ public class Cauldron : MonoBehaviour
             GameObject newPotion = Instantiate(gPotion);
             newPotion.GetComponent<SpriteRenderer>().color = BrewColor();
             AddFunctionToBrew(newPotion);
+            AddMainEffect(newPotion);
         }
         ResetBrewLists();
     }
@@ -40,6 +38,7 @@ public class Cauldron : MonoBehaviour
         Debug.Log(addedIngredient.potionColor);
         IngredientColors.Add(addedIngredient.potionColor);
         AddEffectsToBrewList(addedIngredient.effects);
+        AddGroupToBrewList(addedIngredient.potionGroup);
     }
 
     private Color BrewColor()
@@ -60,7 +59,7 @@ public class Cauldron : MonoBehaviour
         foreach (var newEffect in brewEffects)
         {
             //VeelSuc6 Raoul
-            if(newEffect.allEffects == AllEffects.speed) 
+            if(newEffect.allEffects == SideEffects.speed) 
             {
                 var temp = newPotion.GetComponent<SpeedEffect>();
                 if (temp) 
@@ -73,7 +72,7 @@ public class Cauldron : MonoBehaviour
                    temp.EffectCount(newEffect.addAmount);
                 }
             }
-            if (newEffect.allEffects == AllEffects.arm)
+            if (newEffect.allEffects == SideEffects.arm)
             {
                 var temp = newPotion.GetComponent<ArmEffect>();
                 if (temp)
@@ -94,6 +93,24 @@ public class Cauldron : MonoBehaviour
         {
             brewEffects.Add(newEffect);
         }   
+    }
+
+    private void AddGroupToBrewList(List<string> newGroup) 
+    { 
+        foreach (var newGroupItem in newGroup)
+        {
+            brewGroup.Add(newGroupItem);
+        }
+    }
+
+    private void AddMainEffect(GameObject newPotion) 
+    {
+        //Main Effects
+        if (brewGroup.Contains("Animal") && brewGroup.Contains("Fruit")) 
+        {
+            newPotion.AddComponent<FireEffect>();
+            return;
+        }
     }
 
     private void ResetBrewLists() 

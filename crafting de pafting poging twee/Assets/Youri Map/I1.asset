@@ -16,7 +16,6 @@ MonoBehaviour:
   potionColor: {r: 0, g: 1, b: 0.9506173, a: 1}
   potionGroup:
   - Fruit
-  - Plant
   effects:
   - allEffects: 0
     addAmount: 2
