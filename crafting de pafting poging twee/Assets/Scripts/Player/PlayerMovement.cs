@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] int movementSpeed = 5;
     [SerializeField] int rotationSpeed = 5;
-    [SerializeField] bool inHand1 = false;
+    public bool inHand1 = false;
 
     // Update is called once per frame
     void Update()
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(_Key))
         {
-            if (inHand1 == false && collision.CompareTag("Ingredient"))
+            if (inHand1 == false && (collision.CompareTag("Ingredient") || collision.CompareTag("Potion")))
             {
                 collision.transform.position = _Hand1.transform.position;
                 collision.transform.rotation = _Hand1.transform.rotation;
