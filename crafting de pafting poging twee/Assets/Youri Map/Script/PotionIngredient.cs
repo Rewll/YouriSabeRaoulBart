@@ -23,4 +23,5 @@ public enum SideEffects
 {
     speed,
     arm,
+    none
 }
