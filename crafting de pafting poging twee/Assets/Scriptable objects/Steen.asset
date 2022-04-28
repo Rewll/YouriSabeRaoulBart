@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecb6c2252a65b074597ae0a6fd812962, type: 3}
-  m_Name: Tulp
+  m_Name: Steen
   m_EditorClassIdentifier: 
   potionSprite: {fileID: 0}
-  potionColor: {r: 0.8867924, g: 0.10373794, b: 0.10373794, a: 0}
+  potionColor: {r: 0.24720542, g: 0.4002902, b: 0.6037736, a: 0}
   potionGroup:
-  - Plant
+  - Steen
   effects: []

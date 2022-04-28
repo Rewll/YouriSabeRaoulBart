@@ -105,12 +105,14 @@ public class Cauldron : MonoBehaviour
 
     private void AddMainEffect(GameObject newPotion) 
     {
+        //if(brewGroup.Contains("Steen") && brewGroup.Contains("Fruit") && brewGroup.Contains("Zeepje")) 
+        //{
+        //    return;
+        //}
+
+
         //Main Effects
-        if(brewGroup.Contains("Animal") && brewGroup.Contains("Fruit") && brewGroup.Contains("Zeepje")) 
-        {
-            return;
-        }
-        if (brewGroup.Contains("Animal") && brewGroup.Contains("Fruit")) 
+        if (brewGroup.Contains("Steen") && brewGroup.Contains("Plant")) 
         {
             newPotion.AddComponent<FireEffect>();
             return;
