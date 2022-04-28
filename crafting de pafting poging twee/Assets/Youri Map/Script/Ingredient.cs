@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    [SerializeField] private PotionIngredient potionIngredientSO;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public PotionIngredient potionIngredientSO;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Cauldron"))
+        {
+            var Script = collision.gameObject.GetComponent<Cauldron>();
+            Script.AddIngredient(potionIngredientSO);
+            Destroy(gameObject);
+        }
     }
 
 

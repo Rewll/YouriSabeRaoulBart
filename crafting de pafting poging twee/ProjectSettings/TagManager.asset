@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ingredient
   - Cauldron
+  - Potion
   layers:
   - Default
   - TransparentFX

@@ -12,9 +12,8 @@ public class Cauldron : MonoBehaviour
 
     [Header("PotionSettings")]
     [SerializeField] private GameObject gPotion;
-    [SerializeField] private List<Color> IngredientColors;
-    [SerializeField] private List<Effect> brewEffects;
-    [SerializeField] private List<AbstactSideEffect> sideEffects;
+    private List<Color> IngredientColors = new List<Color>();
+    private List<Effect> brewEffects = new List<Effect>();
 
     private void Update()
     {
@@ -27,13 +26,18 @@ public class Cauldron : MonoBehaviour
 
     public void BrewPotion()
     {
-        GameObject newPotion = Instantiate(gPotion);
-        newPotion.GetComponent<SpriteRenderer>().color = BrewColor();
-        AddFunctionToBrew(newPotion);
+        if(IngredientColors.Count > 0) 
+        {
+            GameObject newPotion = Instantiate(gPotion);
+            newPotion.GetComponent<SpriteRenderer>().color = BrewColor();
+            AddFunctionToBrew(newPotion);
+        }
+        ResetBrewLists();
     }
 
     public void AddIngredient(PotionIngredient addedIngredient) 
     {
+        Debug.Log(addedIngredient.potionColor);
         IngredientColors.Add(addedIngredient.potionColor);
         AddEffectsToBrewList(addedIngredient.effects);
     }
@@ -92,5 +96,9 @@ public class Cauldron : MonoBehaviour
         }   
     }
 
-
+    private void ResetBrewLists() 
+    {
+        brewEffects = new List<Effect>();
+        IngredientColors = new List<Color>();
+    }
 }
