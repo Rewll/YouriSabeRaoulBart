@@ -28,14 +28,14 @@ public class PotionClass : MonoBehaviour
             ThrowPotion.Invoke();
             ThrowPotion.RemoveAllListeners();
             DrinkPotion.RemoveAllListeners();
-            Destroy(gameObject);    
+            //Destroy(gameObject);    
         }
         if (Input.GetMouseButtonDown(1)) //drink
         {
             DrinkPotion.Invoke();
             ThrowPotion.RemoveAllListeners();
             DrinkPotion.RemoveAllListeners();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         //help
     }
