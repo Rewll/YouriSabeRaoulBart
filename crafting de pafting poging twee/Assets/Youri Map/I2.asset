@@ -19,3 +19,5 @@ MonoBehaviour:
   effects:
   - allEffects: 1
     addAmount: 1
+  - allEffects: 0
+    addAmount: -3

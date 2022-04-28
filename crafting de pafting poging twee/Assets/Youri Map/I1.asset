@@ -20,5 +20,5 @@ MonoBehaviour:
   effects:
   - allEffects: 0
     addAmount: 2
-  - allEffects: 2
+  - allEffects: 1
     addAmount: 1
