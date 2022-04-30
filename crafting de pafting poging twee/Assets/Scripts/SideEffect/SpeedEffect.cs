@@ -7,15 +7,15 @@ public class SpeedEffect : AbstactSideEffect
     float amount = 0;
     public override void DrinkEffect()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("DrinkSpeed " + amount.ToString());
     }
     public override void EffectCount(float addedAmount)
     {
         amount += addedAmount;
-        Debug.Log(amount);
+        //Debug.Log(amount);
     }
     public override void ThrowEffect()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("GooiSpeed " + amount.ToString());
     }
 }

@@ -36,7 +36,6 @@ public class Cauldron : MonoBehaviour
 
     public void AddIngredient(PotionIngredient addedIngredient) 
     {
-        Debug.Log(addedIngredient.potionColor);
         IngredientColors.Add(addedIngredient.potionColor);
         AddEffectsToBrewList(addedIngredient.effects);
         AddGroupToBrewList(addedIngredient.potionGroup);
@@ -106,18 +105,10 @@ public class Cauldron : MonoBehaviour
 
     private void AddMainEffect(GameObject newPotion) 
     {
-        //if(brewGroup.Contains("Steen") && brewGroup.Contains("Fruit") && brewGroup.Contains("Zeepje")) 
-        //{
-        //    return;
-        //}
-
-
         //Main Effects
         if (brewGroup.Contains("Steen") && brewGroup.Contains("Plant")) 
         {
             var temp = newPotion.AddComponent<FireEffect>();
-            newPotion.GetComponent<PotionClass>().ThrowPotion.AddListener(temp.ThrowEffect);
-            newPotion.GetComponent<PotionClass>().DrinkPotion.AddListener(temp.DrinkEffect);
             return;
         }
     }
