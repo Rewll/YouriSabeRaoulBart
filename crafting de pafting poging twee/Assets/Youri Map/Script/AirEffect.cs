@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirEffect : IMainEffect
+public class AirEffect : AbstactMainEffect
 {
-    public void DrinkEffect()
+    private GameObject bubblePrefab;
+
+    private void Awake()
+    {
+        bubblePrefab = Resources.Load<GameObject>("Prefabs/BubblePrefab");
+    }
+
+    public override void DrinkEffect()
     {
         throw new System.NotImplementedException();
     }
 
-    public void ThrowEffect()
+    public override void ThrowEffect()
     {
-        throw new System.NotImplementedException();
+        Instantiate(bubblePrefab,transform.position,transform.rotation);
     }
 }
