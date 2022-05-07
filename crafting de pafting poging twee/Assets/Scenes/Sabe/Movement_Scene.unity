@@ -341,7 +341,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &440452174
 BoxCollider2D:
@@ -451,7 +451,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513992977 stripped
 GameObject:
@@ -521,7 +521,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &539693149
 BoxCollider2D:
@@ -1063,7 +1063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &907116850
 BoxCollider2D:
@@ -1101,7 +1101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1069022219}
   - component: {fileID: 1069022218}
-  - component: {fileID: 1069022220}
   m_Layer: 0
   m_Name: PotionTrigger
   m_TagString: Untagged
@@ -1148,26 +1147,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1069022220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069022217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4a2add31b8cc349942b6cd30b70433, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potionEffect: {fileID: 1704174607}
-  textObject: {fileID: 855534798}
-  angryMan: {fileID: 511183467}
-  angryManText: {fileID: 539693146}
-  houseLightsOff: {fileID: 1371167754}
-  houseLightsOn: {fileID: 1188698384}
 --- !u!1 &1188698384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1231,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195245678
 GameObject:
@@ -1334,7 +1315,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229223611
 GameObject:
@@ -1401,7 +1382,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229839842
 GameObject:
@@ -1485,7 +1466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342354748
 GameObject:
@@ -1570,7 +1551,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1342354751
 BoxCollider2D:
@@ -1815,7 +1796,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1387254256
 GameObject:
@@ -1899,7 +1880,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1486714462
 GameObject:
@@ -1983,7 +1964,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567071347
 GameObject:
@@ -2054,7 +2035,7 @@ Transform:
   m_Children:
   - {fileID: 815822211}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1663658124
 GameObject:
@@ -2154,7 +2135,7 @@ RectTransform:
   - {fileID: 211521605}
   - {fileID: 855534799}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2334,7 +2315,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1808994787
 BoxCollider2D:
@@ -2362,6 +2343,80 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12, y: 5}
   m_EdgeRadius: 0
+--- !u!1001 &2066201797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6920713029521317764, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_Name
+      value: Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5126534
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.9766662
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+--- !u!1 &2066201798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6920713029521317764, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+  m_PrefabInstance: {fileID: 2066201797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2066201799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066201798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c9d8bd41d54a541afb6ccacc0d87ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8660073176531947596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2421,6 +2476,10 @@ PrefabInstance:
       propertyPath: handsFullText
       value: 
       objectReference: {fileID: 211521604}
+    - target: {fileID: 8660073176777210206, guid: 85f3bca5b9444c7408e9220ba1e37294, type: 3}
+      propertyPath: rotationSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8660073176777210206, guid: 85f3bca5b9444c7408e9220ba1e37294, type: 3}
       propertyPath: pickUpObjectText
       value: 

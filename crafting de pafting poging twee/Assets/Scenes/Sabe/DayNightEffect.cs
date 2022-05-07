@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class DayNightEffect : AbstactMainEffect
 {
-    public GameObject potionEffect;
-    public GameObject textObject;
-    public GameObject angryMan;
-    public GameObject angryManText;
-    public GameObject houseLightsOff;
-    public GameObject houseLightsOn;
+    GameManagerSO managerSO;
+
+    private void Awake()
+    {
+        managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
+    }
 
     public override void DrinkEffect()
     {
-        potionEffect.SetActive(true);
-        textObject.SetActive(false);
-        angryMan.SetActive(false);
-        angryManText.SetActive(false);
-        houseLightsOff.SetActive(false);
-        houseLightsOn.SetActive(true);
-        Destroy(this.gameObject);
+        managerSO.night = !managerSO.night;
     }
 
     public override void ThrowEffect()
