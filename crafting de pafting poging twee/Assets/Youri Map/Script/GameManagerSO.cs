@@ -10,4 +10,6 @@ public class GameManagerSO : ScriptableObject
 
     //Abilitys
     public float blowAbilityBlowTime;
+
+    public bool night;
 }
