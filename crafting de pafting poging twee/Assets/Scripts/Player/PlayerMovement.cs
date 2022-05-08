@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode _Key;
     
     [SerializeField] int movementSpeed = 5;
-    [SerializeField] int rotationSpeed = 20;
+    //[SerializeField] int rotationSpeed = 10;
     public bool inHand1 = false;
 
     // Update is called once per frame
@@ -32,10 +32,10 @@ public class PlayerMovement : MonoBehaviour
         //transform.rotation = Quaternion.Euler(0f, 0f, zRotation);
         
         // Rotation_2
-        Vector2 rotateDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(rotateDirection.x, rotateDirection.y) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        //Vector2 rotateDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        //float angle = Mathf.Atan2(rotateDirection.x, rotateDirection.y) * Mathf.Rad2Deg;
+        //Quaternion rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
