@@ -13,6 +13,7 @@ public class SpelerVuur : MonoBehaviour
 
     public void Awake()
     {
+        SR = GameObject.Find("Lichaam").GetComponent<SpriteRenderer>();
         SpelerIsHeet();
     }
 
@@ -20,8 +21,7 @@ public class SpelerVuur : MonoBehaviour
     {
         Debug.Log("30 graden, redelijk warm");
         heetTijd += heetTijdToevoeger;
-        SR = GetComponent<SpriteRenderer>();
-        GetComponent<SpriteRenderer>().color = Color.red;
+        SR.color = Color.red;
         //heet logica
 
     }
@@ -36,7 +36,7 @@ public class SpelerVuur : MonoBehaviour
         heetTijd -= Time.deltaTime;
         if (heetTijd <= 0 )
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            SR.color = Color.white;
             //niet meer heet logica
             Destroy(GetComponent<SpelerVuur>());
         }

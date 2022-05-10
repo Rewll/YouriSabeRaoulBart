@@ -18,10 +18,10 @@ public class VuurGedrag : MonoBehaviour
         if (ietsGeraakt)
         {
             Debug.Log("geraakt");
-            geraaktObject.SetActive(false);
+            Destroy(geraaktObject);
         }
         yield return new WaitForSeconds(3);
-        //  Destroy(gameObject);
+        Destroy(gameObject);
     }
 
     public void OnTriggerStay2D(Collider2D collision)

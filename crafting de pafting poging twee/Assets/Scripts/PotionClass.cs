@@ -3,6 +3,15 @@ public class PotionClass : MonoBehaviour
 {
     private ISideEffect[] sideEffects;
     private IMainEffect[] mainEffects;
+    private GameManagerSO managerVanDeAlbertHeijn;
+    private GameObject player;
+
+    private void Awake()
+    {
+        //managerVanDeAlbertHeijn = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
+        player =GameObject.Find("Player");
+    }
+
     private void Update()
     {
         if (!transform.parent)
@@ -23,6 +32,7 @@ public class PotionClass : MonoBehaviour
             {
                 sideEffect.ThrowEffect();
             }
+            player.GetComponent<PlayerMovement>().inHand1 = false;
             Destroy(gameObject);    
         }
         if (Input.GetMouseButtonDown(1)) //drink
@@ -39,6 +49,7 @@ public class PotionClass : MonoBehaviour
             {
                 sideEffect.DrinkEffect();
             }
+            player.GetComponent<PlayerMovement>().inHand1 = false;
             Destroy(gameObject);
         }
     }

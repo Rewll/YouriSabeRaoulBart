@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloudEffect : AbstactMainEffect
+public class CloudEffect : AbstractMainEffect
 {
     GameObject player;
     GameObject cloudPrefab;

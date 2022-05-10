@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeverEffect : AbstactMainEffect
+public class BeverEffect : AbstractMainEffect
 {
     private GameObject player;
 
     public void Awake()
     {
         player = GameObject.Find("Player");
-
     }
 
     public override void DrinkEffect()

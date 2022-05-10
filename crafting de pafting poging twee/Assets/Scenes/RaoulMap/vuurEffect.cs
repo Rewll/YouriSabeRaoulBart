@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class vuurEffect : AbstactMainEffect
+public class vuurEffect : AbstractMainEffect
 {
     private GameObject player;
     GameObject vuurprefab;

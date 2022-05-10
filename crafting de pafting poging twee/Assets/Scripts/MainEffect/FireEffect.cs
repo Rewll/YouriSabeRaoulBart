@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class FireEffect : AbstactMainEffect
+public class FireEffect : AbstractMainEffect
 {
     public bool gooien;
 

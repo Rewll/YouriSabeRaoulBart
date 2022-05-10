@@ -8,13 +8,25 @@ public class PlayerMovement : MonoBehaviour
     public GameObject _Hand1;
     public GameObject pickUpObjectText;
     public GameObject handsFullText;
+    public GameObject roteerbaarheid;
     public KeyCode _Key;
     
     [SerializeField] int movementSpeed = 5;
     public bool inHand1 = false;
 
+    private void Awake()
+    {
+        roteerbaarheid = transform.GetChild(0).gameObject;
+    }
+
     // Update is called once per frame
     void Update()
+    {
+        mouseLookAtPlayer();
+        playerMovement();
+    }
+
+    void playerMovement()
     {
         // Horizontal Movement
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -24,6 +36,16 @@ public class PlayerMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector2.up * verticalInput * movementSpeed * Time.deltaTime);
     }
+
+    public void mouseLookAtPlayer()
+    {
+        Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        diff.Normalize();
+
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        roteerbaarheid.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DayNightEffect : AbstactMainEffect
+public class DayNightEffect : AbstractMainEffect
 {
     GameManagerSO managerSO;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirEffect : AbstactMainEffect
+public class AirEffect : AbstractMainEffect
 {
     private GameObject bubblePrefab;
     private GameObject player;
