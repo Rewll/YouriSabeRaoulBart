@@ -28,7 +28,7 @@ public class vuurEffect : AbstactMainEffect
 
     public override void ThrowEffect()
     {
-        Debug.Log("Speler gooit vuur");
+        //Debug.Log("Speler gooit vuur");
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Instantiate(vuurprefab, worldPosition, Quaternion.identity);
     }

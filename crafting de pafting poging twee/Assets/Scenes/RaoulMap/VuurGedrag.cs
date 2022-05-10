@@ -21,16 +21,20 @@ public class VuurGedrag : MonoBehaviour
             geraaktObject.SetActive(false);
         }
         yield return new WaitForSeconds(3);
-        Destroy(gameObject);
+        //  Destroy(gameObject);
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<Boom>())
+        if (collision.GetComponent<burnableObject>())
         {
             ietsGeraakt = true;
             geraaktObject = collision.gameObject;
         }
+        else
+        {
+        }
+            Debug.Log(collision.name);
     }
 
 }
