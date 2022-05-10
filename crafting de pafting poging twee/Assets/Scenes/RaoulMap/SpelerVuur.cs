@@ -7,37 +7,38 @@ public class SpelerVuur : MonoBehaviour
     SpriteRenderer SR;
     [SerializeField]
     private bool spelerIsHeet;
+    private float heetTijdToevoeger = 10;
     [SerializeField]
     private float heetTijd;
 
     public void Awake()
     {
-        SR = GetComponent<SpriteRenderer>();
+        SpelerIsHeet();
     }
 
     public void SpelerIsHeet()
     {
         Debug.Log("30 graden, redelijk warm");
-        heetTijd += 10;
-        //StartCoroutine(heetWorden());
+        heetTijd += heetTijdToevoeger;
+        SR = GetComponent<SpriteRenderer>();
+        GetComponent<SpriteRenderer>().color = Color.red;
+        //heet logica
+
+    }
+
+    public void spelerWordtLangerHeet()
+    {
+        heetTijd += heetTijdToevoeger;
     }
 
     private void Update()
     {
-        if (heetTijd > 0)
-        {
-            heetTijd -= Time.deltaTime;
-        }
-        if (heetTijd > 0 && !spelerIsHeet)
-        {
-            spelerIsHeet = true;
-            GetComponent<SpriteRenderer>().color = Color.red;
-            Debug.Log("test");
-        }
-        else if (heetTijd <= 0 )
+        heetTijd -= Time.deltaTime;
+        if (heetTijd <= 0 )
         {
             GetComponent<SpriteRenderer>().color = Color.white;
-            spelerIsHeet = false;
+            //niet meer heet logica
+            Destroy(GetComponent<SpelerVuur>());
         }
     }
 }

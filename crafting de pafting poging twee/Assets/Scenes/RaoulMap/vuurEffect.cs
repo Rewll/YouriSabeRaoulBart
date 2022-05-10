@@ -18,9 +18,12 @@ public class vuurEffect : AbstactMainEffect
         Debug.Log("Speler drinkt vuur");
         if (!player.GetComponent<SpelerVuur>())
         {
-            var temp = player.AddComponent<SpelerVuur>();
+            player.AddComponent<SpelerVuur>();
         }
-        player.GetComponent<SpelerVuur>().SpelerIsHeet();
+        else
+        {
+            player.GetComponent<SpelerVuur>().spelerWordtLangerHeet();
+        }
     }
 
     public override void ThrowEffect()
