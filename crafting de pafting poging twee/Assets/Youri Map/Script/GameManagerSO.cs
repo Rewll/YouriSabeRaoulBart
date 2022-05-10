@@ -12,6 +12,4 @@ public class GameManagerSO : ScriptableObject
     public float blowAbilityBlowTime;
 
     public bool night;
-
-    public bool cloudActive;
 }

@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class CloudEntrance : MonoBehaviour
 {
-    GameManagerSO managerSO;
-    BoxCollider2D collider;
     SpriteRenderer renderer;
     Color oriColor;
     Color color;
-    public bool isPlayer;
-
-    private void Awake()
-    {
-        managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
-    }
+    LayerMask layer;
+    LayerMask oriLayer;
+    
 
     private void Start()
     {
-        collider = gameObject.GetComponent<BoxCollider2D>();
+        oriLayer = gameObject.layer;
+        layer = LayerMask.GetMask("CloudPlayer");
         renderer = gameObject.GetComponent<SpriteRenderer>();
         oriColor = renderer.color;
         color = oriColor;
@@ -27,39 +23,23 @@ public class CloudEntrance : MonoBehaviour
 
     void Update()
     {
-        if (isPlayer)
-        {
-            Player();
-        } else
-        {
-            Object();
-        }
+        Player();
     }
 
     void Player()
     {
-
-        if (managerSO.cloudActive == true && renderer.color == oriColor)
+        if (renderer.color == oriColor)
         {
             renderer.color = color;
+            gameObject.layer = layer;
+            Invoke("EffectOver", 10f);
         }
-        else if (managerSO.cloudActive == false && renderer.color == color)
-        {
-            renderer.color = oriColor;
-        }
-
     }
 
-    void Object()
+    void EffectOver()
     {
-        if (managerSO.cloudActive == true && collider.enabled == true)
-        {
-            collider.enabled = false;
-        }
-        else if (managerSO.cloudActive == false && collider.enabled == false)
-        {
-            collider.enabled = true;
-        }
-
+        gameObject.layer = oriLayer;
+        renderer.color = oriColor;
+        Destroy(GetComponent<CloudEntrance>());
     }
 }

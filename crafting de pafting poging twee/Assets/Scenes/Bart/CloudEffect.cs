@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class CloudEffect : AbstactMainEffect
 {
-    GameManagerSO managerSO;
+    GameObject player;
     GameObject cloudPrefab;
 
     private void Awake()
     {
-        managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
+        player = GameObject.Find("Player");
         cloudPrefab = Resources.Load<GameObject>("Prefabs/CloudPrefab");
     }
 
     public override void DrinkEffect()
     {
-        managerSO.cloudActive = true;
-        Invoke("CloudEffectOver", 10f);
-    }
-
-    private void CloudEffectOver()
-    {
-        managerSO.cloudActive = false;
+        if (player.GetComponent<CloudEntrance>() != null)
+        {
+            player.AddComponent<CloudEntrance>();
+        }
     }
 
     public override void ThrowEffect()

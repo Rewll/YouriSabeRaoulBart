@@ -15,4 +15,3 @@ MonoBehaviour:
   abilityKeyCode: 32
   blowAbilityBlowTime: 1.1
   night: 0
-  cloudActive: 1
