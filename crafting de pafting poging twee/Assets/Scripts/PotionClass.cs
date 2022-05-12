@@ -6,6 +6,7 @@ public class PotionClass : MonoBehaviour
     private ISideEffect[] sideEffects;
     private IMainEffect[] mainEffects;
     private GameObject player;
+    [SerializeField] private LayerMask collitionLayers;
 
     private PlayerMovement Playermovement;
     public GameObject geraakteGameObject;
@@ -79,15 +80,18 @@ public class PotionClass : MonoBehaviour
             throwExecution();
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision) //if iets geraakt terwijl reizen
-    { 
-        geraakteGameObject = collision.gameObject;
-        throwExecution();
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (wordtGegooid && IsInLayerMask(collision.gameObject,collitionLayers)) 
+        {
+            geraakteGameObject = collision.gameObject;
+            throwExecution();
+        }
     }
 
     private void throwExecution()
     {
-        Debug.Log("gooi functie POEP");
+        //Debug.Log("gooi functie POEP");
         mainEffects = GetComponents<IMainEffect>();
 
         foreach (var mainEffect in mainEffects)
@@ -115,4 +119,10 @@ public class PotionClass : MonoBehaviour
         }
         return null;
     }
+
+    public bool IsInLayerMask(GameObject obj, LayerMask layerMask)
+    {
+        return ((layerMask.value & (1 << obj.layer)) > 0);
+    }
+
 }
