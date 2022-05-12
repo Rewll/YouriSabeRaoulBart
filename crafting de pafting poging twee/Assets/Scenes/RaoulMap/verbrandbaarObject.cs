@@ -19,10 +19,10 @@ public class verbrandbaarObject : MonoBehaviour
 
     IEnumerator aanHetFikken()
     {
-        GameObject vuurSprite = Instantiate(inDeFikSprite, new Vector2(transform.position.x, transform.position.y - (transform.position.y / 2)), Quaternion.identity);
-        vuurSprite.transform.parent = gameObject.transform;
+        GameObject vuurSprite = Instantiate(inDeFikSprite, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(3);
         GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
