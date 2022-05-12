@@ -111,6 +111,11 @@ public class Cauldron : MonoBehaviour
             var temp = newPotion.AddComponent<FireEffect>();
             return;
         }
+        if(brewGroup.Contains("Water")&& brewGroup.Contains("Air")) 
+        {
+            var temp = newPotion.AddComponent<AirEffect>();
+            return;
+        } 
     }
 
     private void ResetBrewLists() 

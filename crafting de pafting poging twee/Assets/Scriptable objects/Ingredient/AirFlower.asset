@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb6c2252a65b074597ae0a6fd812962, type: 3}
+  m_Name: AirFlower
+  m_EditorClassIdentifier: 
+  potionSprite: {fileID: 0}
+  potionColor: {r: 0.76464933, g: 0.88055444, b: 0.8867924, a: 0.9882353}
+  potionGroup:
+  - Air
+  effects: []
