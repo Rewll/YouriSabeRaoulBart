@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityKeyCode: 32
   blowAbilityBlowTime: 1.1
+  blowAbilityLength: 10
   night: 0
   player: {fileID: 0}

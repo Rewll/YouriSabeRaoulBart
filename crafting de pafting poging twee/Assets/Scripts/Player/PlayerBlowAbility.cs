@@ -10,6 +10,7 @@ public class PlayerBlowAbility : MonoBehaviour
     private bool isBlowing;
     private float blowTime;
     private KeyCode abilityKey;
+    private float effectLength;
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class PlayerBlowAbility : MonoBehaviour
         }
         abilityKey = managerSO.abilityKeyCode;
         blowTime = managerSO.blowAbilityBlowTime;
+        effectLength = managerSO.blowAbilityLength;
     }
 
     private void Update()
@@ -33,6 +35,13 @@ public class PlayerBlowAbility : MonoBehaviour
             blowAbilityPrefab.SetActive(true);
             StartCoroutine(Blowtime());
         }
+
+        effectLength -= Time.deltaTime;
+        if(effectLength <= 0) 
+        {
+            Destroy(blowAbilityPrefab);
+            Destroy(this);
+        }
     }
 
     IEnumerator Blowtime() 
@@ -40,6 +49,11 @@ public class PlayerBlowAbility : MonoBehaviour
         yield return new WaitForSeconds(blowTime);
         isBlowing = false;
         blowAbilityPrefab.SetActive(false);
+    }
+
+    public void AddLengthTime() 
+    {
+        effectLength += managerSO.blowAbilityLength;
     }
 }
 
