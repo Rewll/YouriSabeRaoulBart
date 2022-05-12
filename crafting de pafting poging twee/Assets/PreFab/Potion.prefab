@@ -149,8 +149,5 @@ MonoBehaviour:
   collitionLayers:
     serializedVersion: 2
     m_Bits: 759
-  notPotion:
-    serializedVersion: 2
-    m_Bits: 1023
   geraakteGameObject: {fileID: 0}
   MoveSpeed: 10
