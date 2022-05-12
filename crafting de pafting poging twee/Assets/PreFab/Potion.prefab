@@ -146,3 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7815423e8e552d74c8de8b2a30c388f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collitionLayers:
+    serializedVersion: 2
+    m_Bits: 759
+  geraakteGameObject: {fileID: 0}
+  MoveSpeed: 10
