@@ -15,15 +15,15 @@ public class PotionThrowGroundCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GetClosestIngredient(ingredientObjects);
+        GetClosestObjects(ingredientObjects);
     }
 
-    private Transform GetClosestIngredient(Transform[] ingredients)
+    public Transform GetClosestObjects(Transform[] objektz)
     {
         Transform bestTarget = null;
         float closestDistanceSqr = Mathf.Infinity;
         Vector3 currentPosition = transform.position;
-        foreach (Transform potentialTarget in ingredients)
+        foreach (Transform potentialTarget in objektz)
         {
             Vector3 directionToTarget = potentialTarget.position - currentPosition;
             float dSqrToTarget = directionToTarget.sqrMagnitude;
@@ -36,5 +36,4 @@ public class PotionThrowGroundCollision : MonoBehaviour
 
         return bestTarget;
     }
-
 }
