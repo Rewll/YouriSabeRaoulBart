@@ -137,5 +137,6 @@ public class Cauldron : MonoBehaviour
     {
         brewEffects = new List<Effect>();
         IngredientColors = new List<Color>();
+        brewGroup = new List<string>();
     }
 }

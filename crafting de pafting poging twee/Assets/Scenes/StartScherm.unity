@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2200554e-10, y: -209}
+  m_AnchoredPosition: {x: -4.2200554e-10, y: -180}
   m_SizeDelta: {x: 420.9663, y: 46.1588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53700796
@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bart Sabe Raoul Youri
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
+  m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.8
-  m_fontSizeBase: 34.8
+  m_fontSize: 51.82
+  m_fontSizeBase: 51.82
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -558,7 +558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 135}
+  m_AnchoredPosition: {x: -0.000015259, y: 164}
   m_SizeDelta: {x: 848.1968, y: 93.0045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067378784
@@ -583,8 +583,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Potion crafting bonanza
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
+  m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -898,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 70}
+  m_AnchoredPosition: {x: 0, y: 99}
   m_SizeDelta: {x: 160, y: 88.51871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005607718
@@ -1042,7 +1042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2200554e-10, y: 23}
+  m_AnchoredPosition: {x: -4.2200554e-10, y: 52}
   m_SizeDelta: {x: 420.9663, y: 46.1588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2021641196
@@ -1070,8 +1070,8 @@ MonoBehaviour:
     Use E to grab items and leftmouse
     to throw and rightmouse to drink'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
+  m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1095,8 +1095,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.51
-  m_fontSizeBase: 24.51
+  m_fontSize: 31.5
+  m_fontSizeBase: 31.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
