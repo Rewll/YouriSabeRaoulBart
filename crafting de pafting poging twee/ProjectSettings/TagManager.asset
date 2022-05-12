@@ -8,6 +8,7 @@ TagManager:
   - Cauldron
   - Potion
   - Enemy
+  - WindAblility
   layers:
   - Default
   - TransparentFX

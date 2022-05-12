@@ -116,9 +116,10 @@ GameObject:
   - component: {fileID: 1723852211593404891}
   - component: {fileID: 1723852211593404893}
   - component: {fileID: 1723852211593404890}
+  - component: {fileID: 602717801344318747}
   m_Layer: 3
   m_Name: BlowAbilityPrefab
-  m_TagString: WindAbility
+  m_TagString: WindAblility
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,3 +191,34 @@ PointEffector2D:
   m_ForceMode: 0
   m_Drag: 0
   m_AngularDrag: 0
+--- !u!60 &602717801344318747
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723852211593404888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.08687258, y: 1.8723109}
+      - {x: 0.010150433, y: 1.8750038}
+      - {x: -0.9171961, y: 1.8425013}
+      - {x: -0.5021512, y: 0.49817073}
+      - {x: 0.49139822, y: 0.49472833}
+      - {x: 0.9361365, y: 1.8425009}
