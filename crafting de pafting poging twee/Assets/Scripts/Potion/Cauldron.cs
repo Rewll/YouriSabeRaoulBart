@@ -110,7 +110,7 @@ public class Cauldron : MonoBehaviour
         {
             var temp = newPotion.AddComponent<FireEffect>();
             return;
-        }
+        } //IK HOU HIERVAN ^
         if(brewGroup.Contains("Water")&& brewGroup.Contains("Air")) 
         {
             var temp = newPotion.AddComponent<AirEffect>();
@@ -119,6 +119,16 @@ public class Cauldron : MonoBehaviour
         if (brewGroup.Contains("Fire") && brewGroup.Contains("Air"))
         {
             var temp = newPotion.AddComponent<VuurEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Darkness") && brewGroup.Contains("Fire"))
+        {
+            var temp = newPotion.AddComponent<DayNightEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Darkness") && brewGroup.Contains("Air"))
+        {
+            var temp = newPotion.AddComponent<CloudEffect>();
             return;
         }
     }
