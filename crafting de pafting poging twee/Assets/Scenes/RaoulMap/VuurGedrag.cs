@@ -6,7 +6,7 @@ public class VuurGedrag : MonoBehaviour
 {
     private void Awake()
     {
-        StartCoroutine(fikken());
+        StartCoroutine(fikken());   
     }
 
     IEnumerator fikken()
