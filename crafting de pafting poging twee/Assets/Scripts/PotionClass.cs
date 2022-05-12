@@ -11,6 +11,7 @@ public class PotionClass : MonoBehaviour
     public GameObject geraakteGameObject;
     private bool wordtGegooid;
     private bool isGeland;
+    private bool hasBeenPickedUpByPlayer;
     Vector3 mousePos;
 
     public float MoveSpeed = 10;
@@ -23,7 +24,12 @@ public class PotionClass : MonoBehaviour
 
     private void Update()
     {
-        if (!Playermovement.inHand1 && !wordtGegooid && !isGeland)
+        if(transform.parent != null) 
+        {
+            hasBeenPickedUpByPlayer = true;
+        }
+
+        if (!hasBeenPickedUpByPlayer)
         {
             return;
         }
