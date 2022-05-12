@@ -29,7 +29,7 @@ public class SpuugBal : MonoBehaviour
         }
         if (collision.CompareTag("Player")) 
         {
-            Debug.Log("SpelerGeraakt");
+            collision.gameObject.GetComponent<Respawn>().RespawnPlayer();
         }
         Destroy(gameObject);
     }

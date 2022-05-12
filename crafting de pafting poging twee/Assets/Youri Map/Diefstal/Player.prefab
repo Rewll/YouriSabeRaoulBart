@@ -362,9 +362,10 @@ GameObject:
   - component: {fileID: 8660073176777210202}
   - component: {fileID: 8660073176777210201}
   - component: {fileID: 8660073176777210206}
+  - component: {fileID: 8343636315638289848}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,3 +452,16 @@ MonoBehaviour:
   _Key: 101
   movementSpeed: 5
   inHand1: 0
+--- !u!114 &8343636315638289848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660073176777210205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784c088a937ab6a47bacd7da296f53f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
