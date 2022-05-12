@@ -15,7 +15,7 @@ public class CloudEffect : AbstractMainEffect
 
     public override void DrinkEffect()
     {
-        if (player.GetComponent<CloudEntrance>() != null)
+        if (player.GetComponent<CloudEntrance>() == null)
         {
             player.AddComponent<CloudEntrance>();
         }
