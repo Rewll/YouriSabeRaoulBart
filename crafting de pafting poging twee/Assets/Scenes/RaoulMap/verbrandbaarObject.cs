@@ -13,7 +13,7 @@ public class verbrandbaarObject : MonoBehaviour
 
     public void Brand()
     {
-        Debug.Log("Kijk uit! " + this.name + " staat in de fik!!!!!");
+        //Debug.Log("Kijk uit! " + this.name + " staat in de fik!!!!!");
         StartCoroutine(aanHetFikken());
     }
 
