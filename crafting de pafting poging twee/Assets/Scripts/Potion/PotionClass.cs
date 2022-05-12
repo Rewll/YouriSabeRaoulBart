@@ -64,16 +64,17 @@ public class PotionClass : MonoBehaviour
 
         if (wordtGegooid && !isGeland)
         {
-            Debug.Log("seks");
+            //Debug.Log("seks");
             transform.position = Vector2.MoveTowards(transform.position, mousePos, MoveSpeed * Time.deltaTime);
         }
 
         if (transform.position == mousePos && !isGeland) //if geland
         {
             isGeland = true;
-            geraakteGameObject = GetClosestObject().gameObject;
+            geraakteGameObject = GetClosestObject();
             if (geraakteGameObject == null)
             {
+                //Debug.Log("Soep");
                 Destroy(gameObject);
                 return;
             }
@@ -84,8 +85,11 @@ public class PotionClass : MonoBehaviour
     {
         if (wordtGegooid && IsInLayerMask(collision.gameObject,collitionLayers)) 
         {
-            geraakteGameObject = collision.gameObject;
-            throwExecution();
+            geraakteGameObject = collision.transform.gameObject;
+            if(geraakteGameObject != null) 
+            { 
+                throwExecution();
+            }
         }
     }
 
@@ -108,16 +112,22 @@ public class PotionClass : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private Transform GetClosestObject()
-    {   
-        List<Transform> objects = new List<Transform>();
-        RaycastHit2D drankjeCirkel = Physics2D.CircleCast(transform.position, 2, Vector2.zero);
-        if (drankjeCirkel)
+    private GameObject GetClosestObject()
+    {
+        Transform tMin = null;
+        float minDist = Mathf.Infinity;
+        Collider2D[]hits = Physics2D.OverlapCircleAll(transform.position,2, collitionLayers);
+        foreach (var item in hits)
         {
-            Debug.Log(drankjeCirkel.transform);
-            return drankjeCirkel.transform;
+            float dist = Vector3.Distance(item.transform.position,transform.position);
+            if (dist < minDist)
+            { 
+                tMin = item.transform;
+                minDist = dist;            
+            }
         }
-        return null;
+        return tMin.gameObject;
+
     }
 
     public bool IsInLayerMask(GameObject obj, LayerMask layerMask)

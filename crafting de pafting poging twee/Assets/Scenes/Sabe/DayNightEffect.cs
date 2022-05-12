@@ -6,12 +6,10 @@ public class DayNightEffect : AbstractMainEffect
 {
     GameManagerSO managerSO;
     GameObject hitObject;
-    public GameObject flashlightOn;
 
     private void Awake()
     {
         managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
-        hitObject = gameObject.GetComponent<PotionClass>().geraakteGameObject;
     }
 
     public override void DrinkEffect()
@@ -28,7 +26,12 @@ public class DayNightEffect : AbstractMainEffect
         //Other object lives in the night. 
         //Pro: Player can trigger night-effect of a single other object to player's advantage. Other objects aren't affected.
         //Con: You can't have the night-time advantages of multiple objects at once.
-
-        hitObject.GetComponent<NightCheck>()?.IsItNight();
+        hitObject = gameObject.GetComponent<PotionClass>().geraakteGameObject;
+        var temp = hitObject.GetComponent<NightCheck>();
+        if (temp != null) 
+        { 
+            temp.IsItNight();
+        }
+        
     }
 }
