@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBlowAbility : MonoBehaviour
 {
     private GameObject blowAbilityPrefab;
+    private GameObject blowParticle;
     public GameManagerSO managerSO;
     
     private bool isBlowing;
@@ -15,6 +16,7 @@ public class PlayerBlowAbility : MonoBehaviour
     private void Awake()
     {
         blowAbilityPrefab = Instantiate(Resources.Load<GameObject>("Prefabs/BlowAbilityPrefab"),transform.GetChild(0));
+        blowParticle = Instantiate(Resources.Load<GameObject>("Prefabs/AirParticle"), transform);
         managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
         if (!managerSO) 
         {
@@ -40,6 +42,7 @@ public class PlayerBlowAbility : MonoBehaviour
         if(effectLength <= 0) 
         {
             Destroy(blowAbilityPrefab);
+            Destroy(blowParticle);
             Destroy(this);
         }
     }
