@@ -1042,7 +1042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2200554e-10, y: 52}
+  m_AnchoredPosition: {x: -4.2200554e-10, y: 67}
   m_SizeDelta: {x: 420.9663, y: 46.1588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2021641196
@@ -1068,7 +1068,9 @@ MonoBehaviour:
   m_text: 'Use WASD to move and mouse to point.
 
     Use E to grab items and leftmouse
-    to throw and rightmouse to drink'
+    to throw and rightmouse to drink.
+
+    Space to use a potion drinking ability.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}

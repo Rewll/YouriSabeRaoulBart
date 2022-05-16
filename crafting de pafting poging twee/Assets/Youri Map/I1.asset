@@ -15,7 +15,7 @@ MonoBehaviour:
   potionSprite: {fileID: 0}
   potionColor: {r: 0, g: 1, b: 0.9506173, a: 1}
   potionGroup:
-  - Fruit
+  - Fire
   effects:
   - allEffects: 0
     addAmount: 2
