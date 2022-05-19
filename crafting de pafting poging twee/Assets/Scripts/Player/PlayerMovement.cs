@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject pickUpObjectText;
     public GameObject handsFullText;
     public GameObject roteerbaarheid;
+    public CollisionChecker colliderW, colliderA, colliderS, colliderD;
     public KeyCode _Key;
     
     [SerializeField] int movementSpeed = 5;
@@ -30,16 +31,36 @@ public class PlayerMovement : MonoBehaviour
     void playerMovement()
     {
         // Horizontal Movement
-        float horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector2.right * horizontalInput * movementSpeed * Time.deltaTime);
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //transform.Translate(Vector2.right * horizontalInput * movementSpeed * Time.deltaTime);
 
         // Vertical Movement
-        float verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector2.up * verticalInput * movementSpeed * Time.deltaTime);
+        //float verticalInput = Input.GetAxis("Vertical");
+        //transform.Translate(Vector2.up * verticalInput * movementSpeed * Time.deltaTime);
+        
+        if (Input.GetKey(KeyCode.W) && colliderW.isTouching == false)
+        {
+            transform.Translate(Vector2.up * movementSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.A) && colliderA.isTouching == false)
+        {
+            transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.S) && colliderS.isTouching == false)
+        {
+            transform.Translate(Vector2.down * movementSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.D) && colliderD.isTouching == false)
+        {
+            transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
+        }
 
         // Out of bounds = respawn on other side
         // Y
-        if(transform.position.y < yMinPosition)
+        if (transform.position.y < yMinPosition)
         {
             transform.position = new Vector2(transform.position.x, yMaxPosition);
         } 
