@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode _Key;
     
     [SerializeField] int movementSpeed = 5;
+    [SerializeField] float xMinPosition, xMaxPosition, yMinPosition, yMaxPosition;
     public bool inHand1 = false;
 
     private void Awake()
@@ -35,6 +36,27 @@ public class PlayerMovement : MonoBehaviour
         // Vertical Movement
         float verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector2.up * verticalInput * movementSpeed * Time.deltaTime);
+
+        // Out of bounds = respawn on other side
+        // Y
+        if(transform.position.y < yMinPosition)
+        {
+            transform.position = new Vector2(transform.position.x, yMaxPosition);
+        } 
+        else if (transform.position.y > yMaxPosition)
+        {
+            transform.position = new Vector2(transform.position.x, yMinPosition);
+        }
+
+        // X
+        if (transform.position.x < xMinPosition)
+        {
+            transform.position = new Vector2(xMaxPosition, transform.position.y);
+        }
+        else if(transform.position.x > xMaxPosition)
+        {
+            transform.position = new Vector2(xMinPosition, transform.position.y);
+        }
     }
 
     public void mouseLookAtPlayer()
