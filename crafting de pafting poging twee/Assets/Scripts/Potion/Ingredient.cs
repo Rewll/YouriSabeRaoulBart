@@ -5,18 +5,24 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour
 {
     [SerializeField] private PotionIngredient potionIngredientSO;
-    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private GameObject player;
+    public IngredientGenerator ING;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cauldron"))
         {
             var Script = collision.gameObject.GetComponent<Cauldron>();
             Script.AddIngredient(potionIngredientSO);
-            playerMovement.inHand1 = false;
+            player.GetComponent<PlayerMovement>().inHand1 = false;
+            ING.ingredientenVanDezeFabriek.Remove(this.gameObject);
+            ING.instantieerIngredient();
             Destroy(gameObject);
         }
     }
-
-
-
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2294046731363325197}
   - component: {fileID: 2294046731363325198}
   - component: {fileID: 2294046731363325199}
+  - component: {fileID: 2370230274835287195}
   m_Layer: 0
   m_Name: AirFlower
   m_TagString: Ingredient
@@ -147,4 +148,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionIngredientSO: {fileID: 11400000, guid: bea4d5cddc7073d499ca041e2f7811ba, type: 2}
-  playerMovement: {fileID: 0}
+  player: {fileID: 0}
+  ING: {fileID: 0}
+--- !u!95 &2370230274835287195
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294046731363325194}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f2c2c826401d874fb8322a377cf4f2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
