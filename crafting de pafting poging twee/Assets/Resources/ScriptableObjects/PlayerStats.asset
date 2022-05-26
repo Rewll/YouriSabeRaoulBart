@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02e472ce224049b409ad139f1ff5c8f7, type: 3}
-  m_Name: GameManagerSO
+  m_Script: {fileID: 11500000, guid: ffb6db0afc3a0144fa8ff57c2a55b9e2, type: 3}
+  m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  abilityKeyCode: 32
-  blowAbilityBlowTime: 1.1
-  blowAbilityLength: 10
-  beeAbilityLength: 3
-  night: 0
-  player: {fileID: 0}
+  playerColor: {r: 1, g: 1, b: 1, a: 1}

@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 858390278838494881}
   m_Layer: 0
-  m_Name: Bij
+  m_Name: BeeAbilityPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

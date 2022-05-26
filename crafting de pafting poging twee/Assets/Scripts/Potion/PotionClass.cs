@@ -7,9 +7,10 @@ public class PotionClass : MonoBehaviour
     private IMainEffect[] mainEffects;
     private GameObject player;
     [SerializeField] private LayerMask collitionLayers;
+    [SerializeField] private float collisionRange = 2;
 
     private PlayerMovement Playermovement;
-    public GameObject geraakteGameObject;
+    [HideInInspector] public GameObject geraakteGameObject;
     private bool wordtGegooid;
     private bool isGeland;
     private bool hasBeenPickedUpByPlayer;
@@ -116,7 +117,7 @@ public class PotionClass : MonoBehaviour
     {
         Transform tMin = null;
         float minDist = Mathf.Infinity;
-        Collider2D[]hits = Physics2D.OverlapCircleAll(transform.position,2, collitionLayers);
+        Collider2D[]hits = Physics2D.OverlapCircleAll(transform.position,collisionRange, collitionLayers);
         foreach (var item in hits)
         {
             float dist = Vector3.Distance(item.transform.position,transform.position);

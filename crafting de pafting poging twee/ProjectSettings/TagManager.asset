@@ -9,6 +9,7 @@ TagManager:
   - Potion
   - Enemy
   - WindAblility
+  - Pointy
   layers:
   - Default
   - TransparentFX

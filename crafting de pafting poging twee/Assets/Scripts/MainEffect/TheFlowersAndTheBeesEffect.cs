@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TheFlowersAndTheBeesEffect : IMainEffect
+public class TheFlowersAndTheBeesEffect : AbstractMainEffect
 {
     private GameObject player;
+    private GameObject pollenObject;
 
     private void Awake()
     {
         player = GameObject.Find("Player");
+        pollenObject = Resources.Load<GameObject>("Prefabs/FlowerPollen");
     }
-    public void DrinkEffect()
+    public override void DrinkEffect()
     {
-        if (!player.GetComponent<PlayerBlowAbility>())
+        if (!player.GetComponent<PlayerBeeAblity>())
         {
-            var temp = player.AddComponent<PlayerBlowAbility>();
+            var temp = player.AddComponent<PlayerBeeAblity>();
         }
     }
 
-    public void ThrowEffect()
+    public override void ThrowEffect()
     {
-        throw new System.NotImplementedException();
+        Instantiate(pollenObject,transform.position,Quaternion.identity);       
     }
 }
