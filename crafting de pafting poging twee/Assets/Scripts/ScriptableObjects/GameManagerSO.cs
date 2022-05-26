@@ -11,6 +11,7 @@ public class GameManagerSO : ScriptableObject
     //Abilitys
     public float blowAbilityBlowTime;
     public float blowAbilityLength;
+    public float beeAbilityLength;
 
     public bool night;
 
