@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject roteerbaarheid;
     public KeyCode _Key;
     
-    int movementSpeed = 10;
+    int movementSpeed = 5;
     public bool inHand1 = false;
 
     //public CollisionChecker colliderW, colliderA, colliderS, colliderD;
