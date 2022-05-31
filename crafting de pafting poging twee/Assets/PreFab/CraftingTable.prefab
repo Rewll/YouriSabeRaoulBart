@@ -100,6 +100,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireCode: 0
   gPotion: {fileID: 6920713029521317764, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
+  couldronSprites:
+  - {fileID: 21300000, guid: 7852cbaa5a28d1349a7296912309faf9, type: 3}
+  - {fileID: 21300000, guid: f2a88b2a97bf48049a684d55190ed84f, type: 3}
+  - {fileID: 21300000, guid: da2dffcae0c450241aa20c823422c25e, type: 3}
+  - {fileID: 21300000, guid: 1358122ca5b44bb43b34b4c852ab679b, type: 3}
 --- !u!61 &7681107830504563779
 BoxCollider2D:
   m_ObjectHideFlags: 0

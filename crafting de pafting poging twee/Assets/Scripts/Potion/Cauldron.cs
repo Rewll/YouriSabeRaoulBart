@@ -11,6 +11,9 @@ public class Cauldron : MonoBehaviour
     private List<Color> IngredientColors = new List<Color>();
     private List<Effect> brewEffects = new List<Effect>();
     private List<string> brewGroup = new List<string>();
+    [SerializeField]
+    private Sprite[] couldronSprites;
+    private int couldronSpriteNum = 0;
 
     private void Update()
     {
@@ -32,10 +35,19 @@ public class Cauldron : MonoBehaviour
             AddMainEffect(newPotion);
         }
         ResetBrewLists();
+        couldronSpriteNum = 0;
+        gameObject.GetComponent<SpriteRenderer>().sprite = couldronSprites[couldronSpriteNum];
     }
 
     public void AddIngredient(PotionIngredient addedIngredient) 
     {
+        couldronSpriteNum++;
+        if (couldronSpriteNum <= couldronSprites.Length)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = couldronSprites[couldronSpriteNum];
+        }
+
+
         IngredientColors.Add(addedIngredient.potionColor);
         AddEffectsToBrewList(addedIngredient.effects);
         AddGroupToBrewList(addedIngredient.potionGroup);
