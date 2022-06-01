@@ -121,7 +121,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6920713029521317764}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -149,5 +149,6 @@ MonoBehaviour:
   collitionLayers:
     serializedVersion: 2
     m_Bits: 759
+  collisionRange: 2
   geraakteGameObject: {fileID: 0}
   MoveSpeed: 10

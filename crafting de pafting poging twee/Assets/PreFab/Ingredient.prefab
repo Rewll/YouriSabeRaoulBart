@@ -126,7 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionIngredientSO: {fileID: 11400000, guid: cb99219bffce6d04db5bce6e7e9ba32c, type: 2}
-  playerMovement: {fileID: 0}
+  player: {fileID: 0}
+  ING: {fileID: 0}
 --- !u!50 &451932710561428838
 Rigidbody2D:
   serializedVersion: 4
