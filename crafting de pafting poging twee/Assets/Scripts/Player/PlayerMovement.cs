@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
     {
         _Movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         mouseLookAtPlayer();
+        if(!bottomRightBorder || !topLeftBorder) 
+        {
+            Debug.Log("BorderNotSet");
+            return;
+        }
         BoundaryCheck();
     }
 
