@@ -20,8 +20,11 @@ public class Ingredient : MonoBehaviour
             var Script = collision.gameObject.GetComponent<Cauldron>();
             Script.AddIngredient(potionIngredientSO);
             player.GetComponent<PlayerMovement>().inHand1 = false;
+            if (ING) 
+            { 
             ING.ingredientenVanDezeFabriek.Remove(this.gameObject);
             ING.instantieerIngredient();
+            }
             Destroy(gameObject);
         }
     }

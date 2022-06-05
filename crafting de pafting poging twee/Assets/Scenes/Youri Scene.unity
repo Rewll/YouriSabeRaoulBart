@@ -458,6 +458,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848cb581ae1fef04a98abe1166285b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1465990963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465990964}
+  m_Layer: 0
+  m_Name: BORDER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1465990964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465990963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6622382, y: 1.4114023, z: -0.082235165}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743238889
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,11 +570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 6920713029521317785, guid: 868144f6c9c137e41846d584c39d6e3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1227,7 +1258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7681107830504563783, guid: 0fb4a41ce474fee439237ecb21f55b82, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb4a41ce474fee439237ecb21f55b82, type: 3}
@@ -1308,19 +1339,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Hand1: {fileID: 8660073175560538378}
-  pickUpObjectText: {fileID: 1743238889}
-  handsFullText: {fileID: 1743238889}
+  topLeftBorder: {fileID: 0}
+  bottomRightBorder: {fileID: 0}
   roteerbaarheid: {fileID: 0}
-  colliderW: {fileID: 0}
-  colliderA: {fileID: 0}
-  colliderS: {fileID: 0}
-  colliderD: {fileID: 0}
   _Key: 101
-  movementSpeed: 5
-  xMinPosition: 0
-  xMaxPosition: 0
-  yMinPosition: 0
-  yMaxPosition: 0
   inHand1: 0
 --- !u!4 &8660073177061429604
 Transform:
