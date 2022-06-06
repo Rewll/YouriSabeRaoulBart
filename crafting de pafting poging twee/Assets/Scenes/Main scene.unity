@@ -800,6 +800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireRoseFabriek
       objectReference: {fileID: 0}
+    - target: {fileID: 3084777974558882234, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_RootOrder
       value: 30
