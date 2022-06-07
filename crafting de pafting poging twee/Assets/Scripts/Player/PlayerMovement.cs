@@ -50,9 +50,9 @@ public class PlayerMovement : MonoBehaviour
         //drop ingredient met E knop
         if (Input.GetKey(_Key) && inHand1 == true)
         {
-            Debug.Log("ROEP");
+            Debug.Log(_Hand1.transform.GetChild(0));
             //_Hand1.transform.GetChild(0).parent = null;
-            inHand1 = false;
+            //inHand1 = false;
         }
     }
 
