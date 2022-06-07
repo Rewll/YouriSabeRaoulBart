@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     //public GameObject handsFullText;
     public GameObject roteerbaarheid;
     public KeyCode _Key;
+
+
+    public int gooiKnop; //muis knop
+    public int drinkKnop; //muis knop
     
     int movementSpeed = 5;
     public bool inHand1 = false;
@@ -41,6 +45,15 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         BoundaryCheck();
+
+
+        //drop ingredient met E knop
+        if (Input.GetKey(_Key) && inHand1 == true)
+        {
+            Debug.Log("ROEP");
+            //_Hand1.transform.GetChild(0).parent = null;
+            inHand1 = false;
+        }
     }
 
     public void mouseLookAtPlayer()

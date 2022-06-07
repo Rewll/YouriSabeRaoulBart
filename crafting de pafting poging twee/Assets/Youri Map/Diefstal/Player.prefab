@@ -446,11 +446,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Hand1: {fileID: 8660073176383873334}
-  pickUpObjectText: {fileID: 0}
-  handsFullText: {fileID: 0}
+  topLeftBorder: {fileID: 0}
+  bottomRightBorder: {fileID: 0}
   roteerbaarheid: {fileID: 0}
   _Key: 101
-  movementSpeed: 5
+  gooiKnop: 0
+  drinkKnop: 1
   inHand1: 0
 --- !u!114 &8343636315638289848
 MonoBehaviour:

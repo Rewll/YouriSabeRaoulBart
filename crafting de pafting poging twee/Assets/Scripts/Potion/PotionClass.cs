@@ -36,7 +36,7 @@ public class PotionClass : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0) && !wordtGegooid) //throw
+        if (Input.GetMouseButtonDown(Playermovement.gooiKnop) && !wordtGegooid) //throw
         {
             transform.parent = null;
             Playermovement.inHand1 = false;
@@ -45,7 +45,7 @@ public class PotionClass : MonoBehaviour
             mousePos.z = 0;
         }
 
-        if (Input.GetMouseButtonDown(1) && !wordtGegooid) //drink
+        if (Input.GetMouseButtonDown(Playermovement.drinkKnop) && !wordtGegooid) //drink
         {
             //mainEffect
             mainEffects = GetComponents<IMainEffect>();

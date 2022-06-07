@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7544236033045962718}
   - component: {fileID: 7544236033045962719}
+  - component: {fileID: 7613708607855563692}
+  - component: {fileID: 2320837183398297247}
   m_Layer: 0
   m_Name: inDeFikSprite
   m_TagString: Untagged
@@ -84,3 +86,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7613708607855563692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7544236033045962688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958bd2355d9edca4db5bd75eb0e136ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerManager:
+  - nameTimer: Verdwijner
+    activateOnStart: 1
+    timerLengt: 6
+    OnTimerDone:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2320837183398297247}
+          m_TargetAssemblyTypeName: verdwijnerScript, Assembly-CSharp
+          m_MethodName: verdwijnNU
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2320837183398297247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7544236033045962688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4f680f06e6f6e45b759e71015ee523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
