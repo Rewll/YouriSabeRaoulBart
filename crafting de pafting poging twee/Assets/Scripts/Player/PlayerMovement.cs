@@ -54,34 +54,14 @@ public class PlayerMovement : MonoBehaviour
         }
         BoundaryCheck();
 
-        if (inHand1)
-        {
-            totalFramesInHand++;
-        }
-        else
-        {
-            totalFramesNOTInHand++;
-        }
-        //drop ingredient met E knop
+        //drop ingredient met knop
         //itemDrop();
         oppakKnopCheck = Input.GetMouseButton(playerStatSORef.throwButton);
     }
 
-    public void itemDrop()
+    public void ingredientThrow()
     {
-        if (totalFramesInHand  > 10 && inHand1 && Input.GetKeyDown(_Key))
-        {
-            totalFramesInHand = 0;
-            Debug.Log("Drops" + _Hand1.transform.GetChild(0));
-            _Hand1.transform.GetChild(0).parent = null;
-            inHand1 = false;
-        }
 
-        if (Input.GetKeyDown(_Key))
-        {
-            Debug.Log(totalFramesInHand);
-            Debug.Log(inHand1);
-        }
     }
 
     public void mouseLookAtPlayer()
@@ -143,15 +123,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))
-        {
-            opIngredient = true;
-        }
-        else
-        {
-            opIngredient = false;
-        }
-
         if (oppakKnopCheck && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
         {
             totalFramesNOTInHand = 0;
