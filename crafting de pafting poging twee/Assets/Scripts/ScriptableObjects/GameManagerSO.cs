@@ -14,6 +14,7 @@ public class GameManagerSO : ScriptableObject
     public float beeAbilityLength;
     public float magnetAbilityLength;
     public float shrinkAbilityLength;   
+    public float TeleportAbilityWaitLength;   
 
     public bool night;
 
