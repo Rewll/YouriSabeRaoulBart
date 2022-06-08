@@ -18,15 +18,8 @@ public class PlayerMovement : MonoBehaviour
     int movementSpeed = 5;
     public bool inHand1 = false;
 
-    //garbage code
-    [SerializeField]
-    private int totalFramesInHand;
-    [SerializeField]
-    private int totalFramesNOTInHand;
     [SerializeField]
     private bool oppakKnopCheck;
-    [SerializeField]
-    private bool opIngredient;
 
     //public CollisionChecker colliderW, colliderA, colliderS, colliderD;
 
@@ -47,11 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _Movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         mouseLookAtPlayer();
-        if(!bottomRightBorder || !topLeftBorder) 
-        {
-            Debug.Log("BorderNotSet");
-            return;
-        }
+
         BoundaryCheck();
 
         //drop ingredient met knop
@@ -76,7 +65,10 @@ public class PlayerMovement : MonoBehaviour
     public void BoundaryCheck()
     {
         //// Out of bounds = respawn on other side
-
+        if (!bottomRightBorder || !topLeftBorder)
+        { 
+            return;
+        }
         // Top-Left
         if (transform.position.x < topLeftBorder.position.x)
         {
@@ -125,7 +117,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (oppakKnopCheck && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
         {
-            totalFramesNOTInHand = 0;
             collision.transform.position = _Hand1.transform.position;
             collision.transform.rotation = _Hand1.transform.rotation;
             collision.transform.SetParent(_Hand1.transform);

@@ -12,7 +12,7 @@ public class PlayerMagnetAbility : MonoBehaviour
     {
         managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
         magnetPrefab = Instantiate(Resources.Load<GameObject>("Prefabs/MagnetAbilityPrefab"), transform);
-        effectLength = managerSO.beeAbilityLength;
+        effectLength = managerSO.magnetAbilityLength;
     }
     // Update is called once per frame
     void Update()
@@ -26,6 +26,6 @@ public class PlayerMagnetAbility : MonoBehaviour
     }
     public void AddLengthTime()
     {
-        effectLength += managerSO.beeAbilityLength;
+        effectLength += managerSO.magnetAbilityLength;
     }
 }

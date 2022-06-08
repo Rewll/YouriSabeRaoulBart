@@ -16,7 +16,7 @@ public class TheFlowersAndTheBeesEffect : AbstractMainEffect
     {
         if (!player.GetComponent<PlayerBeeAblity>())
         {
-            var temp = player.AddComponent<PlayerBeeAblity>();
+            player.AddComponent<PlayerBeeAblity>();
         }
         else 
         {

@@ -20,7 +20,14 @@ public class TeleportMagnetEffect : AbstractMainEffect
     }
     public override void DrinkEffect()
     {
-        throw new System.NotImplementedException();
+        if (!player.GetComponent<PlayerMagnetAbility>())
+        {
+            player.AddComponent<PlayerMagnetAbility>();
+        }
+        else
+        {
+            player.GetComponent<PlayerMagnetAbility>().AddLengthTime();
+        }
     }
 
     public override void ThrowEffect()
