@@ -46,7 +46,7 @@ public class PotionClass : MonoBehaviour
         if (Input.GetMouseButtonDown(playerStatSORef.throwButton) && !wordtGegooid) //throw
         {
             transform.parent = null;
-            Playermovement.inHand1 = false;
+            //Playermovement.inHand1 = false;
             wordtGegooid = true;
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
@@ -66,7 +66,7 @@ public class PotionClass : MonoBehaviour
             {
                 sideEffect.DrinkEffect();
             }
-            Playermovement.inHand1 = false;
+            //Playermovement.inHand1 = false;
             Destroy(gameObject);
         }
 

@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     //public GameObject pickUpObjectText;
     //public GameObject handsFullText;
     public GameObject roteerbaarheid;
-    public KeyCode _Key;
     PlayerStatsSO playerStatSORef;
 
     int movementSpeed = 5;
@@ -40,17 +39,31 @@ public class PlayerMovement : MonoBehaviour
     {
         _Movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         mouseLookAtPlayer();
+        oppakKnopCheck = Input.GetMouseButton(playerStatSORef.throwButton);
 
         BoundaryCheck();
-
-        //drop ingredient met knop
-        //itemDrop();
-        oppakKnopCheck = Input.GetMouseButton(playerStatSORef.throwButton);
+        handCheck();
     }
 
     public void ingredientThrow()
     {
 
+    }
+
+    void handCheck()
+    {
+        if (_Hand1.transform.childCount == 1)
+        {
+            inHand1 = true;
+        }
+        else if (_Hand1.transform.childCount > 1)
+        {
+            Debug.LogError("meerdere dingen in hand, DIT IS ILLEGAAL");
+        }
+        else
+        {
+            inHand1 = false;
+        }
     }
 
     public void mouseLookAtPlayer()
@@ -120,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
             collision.transform.position = _Hand1.transform.position;
             collision.transform.rotation = _Hand1.transform.rotation;
             collision.transform.SetParent(_Hand1.transform);
-            inHand1 = true;
+            //inHand1 = true;
             Debug.Log("Picks up" + collision.name);
         }
     }
