@@ -23,7 +23,7 @@ public class SpuugBal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ingredient") || collision.CompareTag("Potion") || collision.CompareTag("Enemy") || collision.CompareTag("Pointy") || collision.CompareTag("WindAblility")) 
+        if (collision.CompareTag("Ingredient") || collision.CompareTag("Potion") || collision.CompareTag("Enemy") || collision.CompareTag("Pointy") || collision.CompareTag("WindAblility") || collision.CompareTag("Fire")) 
         {
             return;
         }

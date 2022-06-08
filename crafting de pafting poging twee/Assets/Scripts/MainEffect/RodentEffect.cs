@@ -15,12 +15,19 @@ public class RodentEffect : AbstractMainEffect
 
     public override void DrinkEffect()
     {
-        throw new System.NotImplementedException();
+        if (!player.GetComponent<PlayerShrinkAbility>())
+        {
+            var temp = player.AddComponent<PlayerShrinkAbility>();
+        }
+        else
+        {
+            player.GetComponent<PlayerShrinkAbility>().AddLengthTime();
+        }
     }
 
     public override void ThrowEffect()
     {
-        Instantiate(egelPrefab, transform.position, transform.rotation);
+        Instantiate(egelPrefab, transform.position,Quaternion.identity);
     }
 
 }

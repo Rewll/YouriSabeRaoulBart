@@ -19,6 +19,10 @@ public class AirEffect : AbstractMainEffect
         { 
             var temp = player.AddComponent<PlayerBlowAbility>();
         }
+        else 
+        {
+            player.GetComponent<PlayerBlowAbility>().AddLengthTime();
+        }
     }
 
     public override void ThrowEffect()
