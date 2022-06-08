@@ -29,7 +29,7 @@ public class IngredientGenerator : MonoBehaviour
 
     public void instantieerIngredient()
     {
-        Debug.Log("ingredient ge-instantieerd");
+        //Debug.Log("ingredient ge-instantieerd");
         GameObject nieuwIngredient = Instantiate(ingredientPrefab, WillekeurigPuntInGrenzen(), Quaternion.identity);
         ingredientenVanDezeFabriek.Add(nieuwIngredient);
         nieuwIngredient.GetComponent<Ingredient>().ING = GetComponent<IngredientGenerator>();

@@ -14,12 +14,22 @@ public class PlayerMovement : MonoBehaviour
     public GameObject roteerbaarheid;
     public KeyCode _Key;
 
-
     public int gooiKnop; //muis knop
     public int drinkKnop; //muis knop
     
     int movementSpeed = 5;
     public bool inHand1 = false;
+
+    
+    //garbage code
+    [SerializeField]
+    private int totalFramesInHand;
+    [SerializeField]
+    private int totalFramesNOTInHand;
+    [SerializeField]
+    private bool Eknopchecker;
+    [SerializeField]
+    private bool opIngredient;
 
     //public CollisionChecker colliderW, colliderA, colliderS, colliderD;
 
@@ -46,13 +56,33 @@ public class PlayerMovement : MonoBehaviour
         }
         BoundaryCheck();
 
-
-        //drop ingredient met E knop
-        if (Input.GetKey(_Key) && inHand1 == true)
+        if (inHand1)
         {
-            Debug.Log(_Hand1.transform.GetChild(0));
-            //_Hand1.transform.GetChild(0).parent = null;
-            //inHand1 = false;
+            totalFramesInHand++;
+        }
+        else
+        {
+            totalFramesNOTInHand++;
+        }
+        //drop ingredient met E knop
+        //itemDrop();
+        Eknopchecker = Input.GetKey(_Key);
+    }
+
+    public void itemDrop()
+    {
+        if (totalFramesInHand  > 10 && inHand1 && Input.GetKeyDown(_Key))
+        {
+            totalFramesInHand = 0;
+            Debug.Log("Drops" + _Hand1.transform.GetChild(0));
+            _Hand1.transform.GetChild(0).parent = null;
+            inHand1 = false;
+        }
+
+        if (Input.GetKeyDown(_Key))
+        {
+            Debug.Log(totalFramesInHand);
+            Debug.Log(inHand1);
         }
     }
 
@@ -115,15 +145,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(_Key))
+        if (collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))
         {
-            if (inHand1 == false && (collision.CompareTag("Ingredient") || collision.CompareTag("Potion")))
-            {
-                collision.transform.position = _Hand1.transform.position;
-                collision.transform.rotation = _Hand1.transform.rotation;
-                collision.transform.SetParent(_Hand1.transform);
-                inHand1 = true;
-            }
+            opIngredient = true;
+        }
+        else
+        {
+            opIngredient = false;
+        }
+
+        if (totalFramesNOTInHand > 10 && Eknopchecker && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
+        {
+            totalFramesNOTInHand = 0;
+            collision.transform.position = _Hand1.transform.position;
+            collision.transform.rotation = _Hand1.transform.rotation;
+            collision.transform.SetParent(_Hand1.transform);
+            inHand1 = true;
+            Debug.Log("Picks up" + collision.name);
         }
     }
 
