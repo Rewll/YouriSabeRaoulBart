@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4002478240329061754}
   - component: {fileID: 4002478240329061757}
   - component: {fileID: 6145235410377508186}
+  - component: {fileID: 6925012090596913558}
   m_Layer: 0
   m_Name: WaterSteen
   m_TagString: Ingredient
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b6aaf3a427bcb554e8188b757c26fc26, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02, y: -0.03}
+  m_Offset: {x: 0.004244268, y: -0.03819835}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.67}
+  m_Size: {x: 1.3761746, y: 0.93477416}
   m_EdgeRadius: 0
 --- !u!50 &4002478240329061754
 Rigidbody2D:
@@ -170,3 +171,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6925012090596913558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002478240329061758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0660f897b0c084049966c8c7bef025c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  klikt: 0

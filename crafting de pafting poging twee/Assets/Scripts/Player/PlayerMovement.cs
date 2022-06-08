@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (_Hand1.transform.childCount > 1)
         {
-            Debug.LogError("meerdere dingen in hand, DIT IS ILLEGAAL");
+            //Debug.LogError("meerdere dingen in hand, DIT IS ILLEGAAL");
         }
         else
         {
@@ -128,7 +128,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (oppakKnopCheck && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
+        Debug.Log(collision.name);
+        if (oppakKnopCheck && inHand1 == false && collision.GetComponent<Clickable>().klikt &&((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
         {
             collision.transform.position = _Hand1.transform.position;
             collision.transform.rotation = _Hand1.transform.rotation;

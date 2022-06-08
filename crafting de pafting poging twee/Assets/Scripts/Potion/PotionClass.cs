@@ -66,7 +66,8 @@ public class PotionClass : MonoBehaviour
             {
                 sideEffect.DrinkEffect();
             }
-            //Playermovement.inHand1 = false;
+            //Playermovement.inHand1
+            //= false;
             Destroy(gameObject);
         }
 

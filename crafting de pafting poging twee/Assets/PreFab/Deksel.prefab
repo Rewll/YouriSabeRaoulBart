@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2412113248577903649}
   - component: {fileID: 2412113248577903676}
   - component: {fileID: 2412113248577903677}
+  - component: {fileID: 566618399879164580}
   m_Layer: 0
   m_Name: Deksel
   m_TagString: Ingredient
@@ -105,7 +106,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.55, y: 0.56}
+    oldSize: {x: 1.375, y: 1.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -201,3 +202,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &566618399879164580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2412113248577903654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0660f897b0c084049966c8c7bef025c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

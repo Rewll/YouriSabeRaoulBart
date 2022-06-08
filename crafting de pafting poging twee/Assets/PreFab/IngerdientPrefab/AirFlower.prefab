@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2294046731363325198}
   - component: {fileID: 2294046731363325199}
   - component: {fileID: 2370230274835287195}
+  - component: {fileID: -1026905855197054100}
   m_Layer: 0
   m_Name: AirFlower
   m_TagString: Ingredient
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.01}
+  m_Offset: {x: 0, y: 0.0030217692}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19, y: 0.3}
+  m_Size: {x: 0.4, y: 0.48823506}
   m_EdgeRadius: 0
 --- !u!50 &2294046731363325198
 Rigidbody2D:
@@ -170,3 +171,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1026905855197054100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294046731363325194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0660f897b0c084049966c8c7bef025c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  klikt: 0
