@@ -13,7 +13,7 @@ public class GameManagerSO : ScriptableObject
     public float blowAbilityLength;
     public float beeAbilityLength;
     public float magnetAbilityLength;
-    public float shrinkAbilityLength;
+    public float shrinkAbilityLength;   
 
     public bool night;
 

@@ -19,7 +19,7 @@ public class PlayerShrinkAbility : MonoBehaviour
             return;
         }
         abilityKey = managerSO.abilityKeyCode;
-        effectLength = managerSO.blowAbilityLength;
+        effectLength = managerSO.shrinkAbilityLength;
     }
 
     // Update is called once per frame
