@@ -11,7 +11,7 @@ public class PotionClass : MonoBehaviour
 
     private PlayerMovement Playermovement;
     [HideInInspector] public GameObject geraakteGameObject;
-    private bool wordtGegooid;
+    [HideInInspector] public bool wordtGegooid;
     private bool isGeland;
     private bool hasBeenPickedUpByPlayer;
     Vector3 mousePos;

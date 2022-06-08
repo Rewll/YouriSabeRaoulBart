@@ -18,6 +18,10 @@ public class TheFlowersAndTheBeesEffect : AbstractMainEffect
         {
             var temp = player.AddComponent<PlayerBeeAblity>();
         }
+        else 
+        {
+            player.GetComponent<PlayerBeeAblity>().AddLengthTime();
+        }
     }
 
     public override void ThrowEffect()
