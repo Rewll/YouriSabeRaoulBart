@@ -77,6 +77,7 @@ public class PotionClass : MonoBehaviour
             {
                 //Debug.Log("Soep");
                 Destroy(gameObject);
+                throwExecution();
                 return;
             }
             throwExecution();
@@ -126,6 +127,10 @@ public class PotionClass : MonoBehaviour
                 tMin = item.transform;
                 minDist = dist;            
             }
+        }
+        if (!tMin) 
+        {
+            return null;
         }
         return tMin.gameObject;
 
