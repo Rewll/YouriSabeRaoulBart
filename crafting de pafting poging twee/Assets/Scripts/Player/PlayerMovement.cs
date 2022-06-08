@@ -13,21 +13,18 @@ public class PlayerMovement : MonoBehaviour
     //public GameObject handsFullText;
     public GameObject roteerbaarheid;
     public KeyCode _Key;
+    PlayerStatsSO playerStatSORef;
 
-    public int gooiKnop; //muis knop
-    public int drinkKnop; //muis knop
-    
     int movementSpeed = 5;
     public bool inHand1 = false;
 
-    
     //garbage code
     [SerializeField]
     private int totalFramesInHand;
     [SerializeField]
     private int totalFramesNOTInHand;
     [SerializeField]
-    private bool Eknopchecker;
+    private bool oppakKnopCheck;
     [SerializeField]
     private bool opIngredient;
 
@@ -37,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         roteerbaarheid = transform.GetChild(0).gameObject;
+        playerStatSORef = Resources.Load<PlayerStatsSO>("ScriptableObjects/PlayerStats");
     }
 
     private void FixedUpdate()
@@ -66,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
         //drop ingredient met E knop
         //itemDrop();
-        Eknopchecker = Input.GetKey(_Key);
+        oppakKnopCheck = Input.GetMouseButton(playerStatSORef.throwButton);
     }
 
     public void itemDrop()
@@ -154,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
             opIngredient = false;
         }
 
-        if (totalFramesNOTInHand > 10 && Eknopchecker && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
+        if (oppakKnopCheck && inHand1 == false && ((collision.CompareTag("Ingredient") || collision.CompareTag("Potion"))))
         {
             totalFramesNOTInHand = 0;
             collision.transform.position = _Hand1.transform.position;

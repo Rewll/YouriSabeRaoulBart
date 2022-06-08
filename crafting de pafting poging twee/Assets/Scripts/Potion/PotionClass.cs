@@ -10,6 +10,7 @@ public class PotionClass : MonoBehaviour
     [SerializeField] private float collisionRange = 2;
 
     private PlayerMovement Playermovement;
+    private PlayerStatsSO playerStatSORef;
     [HideInInspector] public GameObject geraakteGameObject;
     [HideInInspector] public bool wordtGegooid;
     private bool isGeland;
@@ -22,10 +23,16 @@ public class PotionClass : MonoBehaviour
     {
         player = GameObject.Find("Player");
         Playermovement = player.GetComponent<PlayerMovement>();
+        playerStatSORef = Resources.Load<PlayerStatsSO>("ScriptableObjects/PlayerStats");
     }
 
     private void Update()
     {
+        if (!playerStatSORef)
+        {
+            Debug.LogError("playerStatSORef IS ER NIET HELP CHAOS WAAAAA");
+            return;
+        }
         if(transform.parent != null) 
         {
             hasBeenPickedUpByPlayer = true;
@@ -36,7 +43,7 @@ public class PotionClass : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(Playermovement.gooiKnop) && !wordtGegooid) //throw
+        if (Input.GetMouseButtonDown(playerStatSORef.throwButton) && !wordtGegooid) //throw
         {
             transform.parent = null;
             Playermovement.inHand1 = false;
@@ -45,7 +52,7 @@ public class PotionClass : MonoBehaviour
             mousePos.z = 0;
         }
 
-        if (Input.GetMouseButtonDown(Playermovement.drinkKnop) && !wordtGegooid) //drink
+        if (Input.GetMouseButtonDown(playerStatSORef.drinkButton) && !wordtGegooid) //drink
         {
             //mainEffect
             mainEffects = GetComponents<IMainEffect>();

@@ -42,11 +42,10 @@ public class Cauldron : MonoBehaviour
     public void AddIngredient(PotionIngredient addedIngredient) 
     {
         couldronSpriteNum++;
-        if (couldronSpriteNum <= couldronSprites.Length)
+        if (couldronSpriteNum < couldronSprites.Length)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = couldronSprites[couldronSpriteNum];
         }
-
 
         IngredientColors.Add(addedIngredient.potionColor);
         AddEffectsToBrewList(addedIngredient.effects);
