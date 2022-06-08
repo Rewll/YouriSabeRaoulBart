@@ -18,5 +18,6 @@ MonoBehaviour:
   beeAbilityLength: 10
   magnetAbilityLength: 10
   shrinkAbilityLength: 10
+  TeleportAbilityWaitLength: 2
   night: 0
   player: {fileID: 0}
