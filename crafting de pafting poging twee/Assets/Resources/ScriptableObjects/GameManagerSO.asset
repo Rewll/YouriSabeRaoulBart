@@ -17,5 +17,6 @@ MonoBehaviour:
   blowAbilityLength: 10
   beeAbilityLength: 10
   magnetAbilityLength: 10
+  shrinkAbilityLength: 10
   night: 0
   player: {fileID: 0}
