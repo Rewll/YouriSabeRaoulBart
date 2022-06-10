@@ -19,5 +19,6 @@ MonoBehaviour:
   magnetAbilityLength: 10
   shrinkAbilityLength: 10
   TeleportAbilityWaitLength: 2
+  VipAbilityLength: 10
   night: 0
   player: {fileID: 0}

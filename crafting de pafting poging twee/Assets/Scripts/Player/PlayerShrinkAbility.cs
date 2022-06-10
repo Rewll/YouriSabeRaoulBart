@@ -25,7 +25,7 @@ public class PlayerShrinkAbility : MonoBehaviour
         player = GameObject.Find("Player");
         mouseCostume = Instantiate(Resources.Load<GameObject>("Prefabs/MouseMode"),transform.GetChild(0));
         statsSO = Resources.Load<PlayerStatsSO>("ScriptableObjects/PlayerStats");
-        if (!player) 
+        if (!statsSO) 
         {
             Debug.LogWarning("PlayerStatsSo Not Found in PlayerShrinkAbility");
             this.enabled = false;
