@@ -8,13 +8,13 @@ public class Clickable : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("Geklikt op: " + gameObject.name);
+        //Debug.Log("Geklikt op: " + gameObject.name);
         klikt = true;
     }
 
     public void OnMouseUp()
     {
-        Debug.Log("losgelaten op: " + gameObject.name);
+        //Debug.Log("losgelaten op: " + gameObject.name);
         klikt = false;
     }
 }
