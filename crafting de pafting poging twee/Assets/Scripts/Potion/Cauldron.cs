@@ -142,6 +142,11 @@ public class Cauldron : MonoBehaviour
             var temp = newPotion.AddComponent<CloudEffect>();
             return;
         }
+        if (brewGroup.Contains("Tutorial"))
+        {
+            var temp = newPotion.AddComponent<TutorialEffect>();
+            return;
+        }
     }
 
     private void ResetBrewLists() 

@@ -11,6 +11,7 @@ public class Ingredient : MonoBehaviour
 
     [SerializeField]
     private bool hasBeenPickedUpByPlayer;
+    [SerializeField]
     private bool wordtGegooid;
 
     Vector3 mousePos;
@@ -24,7 +25,17 @@ public class Ingredient : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        wordtGegooid = false;
+        if (!collision.CompareTag("Player"))
+        {
+            wordtGegooid = false;
+            //Debug.Log("boe " + collision.name);
+        }
+        //else if (!collision.CompareTag("Tutorial"))
+        //{
+        //    wordtGegooid = false;
+        //    Debug.Log("boe " + collision.name);
+        //}
+
         if (collision.gameObject.CompareTag("Cauldron"))
         {
             var Script = collision.gameObject.GetComponent<Cauldron>();
@@ -44,11 +55,18 @@ public class Ingredient : MonoBehaviour
         if (!collision.CompareTag("Player"))
         {
             wordtGegooid = false;
+            //Debug.Log("boe " + collision.name);
         }
+        //else if (!collision.CompareTag("Tutorial"))
+        //{
+        //    wordtGegooid = false;
+        //    Debug.Log("boe " + collision.name);
+        //}
     }
 
     public void Update()
     {
+        
         if (transform.parent)
         {
             hasBeenPickedUpByPlayer = true;
@@ -74,6 +92,7 @@ public class Ingredient : MonoBehaviour
         if (transform.position == mousePos) 
         {
             wordtGegooid = false;
+            //Debug.Log("boe");
         }
     }
 }
