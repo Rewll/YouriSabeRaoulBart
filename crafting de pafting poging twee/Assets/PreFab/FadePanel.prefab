@@ -104,3 +104,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 1
+  fadeLengthDivider: 1

@@ -7,6 +7,7 @@ public class IngredientTrigger : MonoBehaviour
 {
     public UnityEvent triggerEnter;
     public UnityEvent triggerEnter2;
+    public UnityEvent textOutFadeEvent;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,7 +24,8 @@ public class IngredientTrigger : MonoBehaviour
 
     IEnumerator stupidCode()
     {
-        yield return new WaitForSeconds(7);
+        textOutFadeEvent.Invoke();
+        yield return new WaitForSeconds(2);
         triggerEnter2.Invoke();
     }
 }

@@ -17,7 +17,7 @@ public class TutorialEffect : AbstractMainEffect
     {
         player.transform.GetChild(0).gameObject.SetActive(false);
         player.transform.GetChild(1).gameObject.SetActive(true);
-        Instantiate(Resources.Load<GameObject>("Prefabs/SpelerECHT(nep)"), GameObject.Find("SpelerECHTPOS").transform.position, Quaternion.identity);
+        player.AddComponent<Tutorialability>();
     }
 
     public override void ThrowEffect()

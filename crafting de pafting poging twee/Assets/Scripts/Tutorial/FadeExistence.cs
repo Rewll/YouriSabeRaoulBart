@@ -9,6 +9,7 @@ public class FadeExistence : MonoBehaviour
     private bool onStartIN;
     [SerializeReference]
     private bool onStartOUT;
+    public float fadeLengthDivider = 1;
 
     public void Awake()
     {
@@ -35,7 +36,7 @@ public class FadeExistence : MonoBehaviour
     {
         while (CG.alpha < 1 )
         {
-            CG.alpha += Time.deltaTime / 1;
+            CG.alpha += Time.deltaTime / fadeLengthDivider;
             yield return null;
         }
         yield return null;
@@ -48,7 +49,7 @@ public class FadeExistence : MonoBehaviour
     {
         while (CG.alpha > 0)
         {
-            CG.alpha -= Time.deltaTime / 1;
+            CG.alpha -= Time.deltaTime / fadeLengthDivider;
             yield return null;
         }
         yield return null;

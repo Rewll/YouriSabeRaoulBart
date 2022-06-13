@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1878302432}
     m_Modifications:
+    - target: {fileID: 8870953062848340267, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
+      propertyPath: fadeLengthDivider
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -144,27 +148,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1086
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0293163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0293163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0293163
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.2643398
       objectReference: {fileID: 0}
     - target: {fileID: 8870953062848340268, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -217,6 +233,10 @@ PrefabInstance:
     - target: {fileID: 8870953062848340269, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
       propertyPath: m_Name
       value: FadePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870953062848340269, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2abc0e51fcb674c9a68a92561a39a1, type: 3}
@@ -857,6 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 0
+  fadeLengthDivider: 1
 --- !u!1 &745087929
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,8 +915,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -285.42, y: -170.01}
-  m_SizeDelta: {x: 840.0188, y: 160.45}
+  m_AnchoredPosition: {x: -289.27, y: -169.64}
+  m_SizeDelta: {x: 1139.151, y: 370.5633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &745087931
 CanvasGroup:
@@ -929,8 +950,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can throw the potion just the same, or drink it with the right mouse
-    button
+  m_text: "You can throw the potion just the same, \n\nor drink it with the right
+    mouse button, then use the space button to use the ability"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
@@ -957,10 +978,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.1
-  m_fontSizeBase: 36
+  m_fontSize: 62.5
+  m_fontSizeBase: 62.5
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1021,6 +1042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 0
+  fadeLengthDivider: 1
 --- !u!1001 &940515268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1113,7 +1135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039383501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.58, y: -6.5, z: 0}
+  m_LocalPosition: {x: -5.94, y: -6.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1197,7 +1219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046387426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.62, y: 7.91, z: 0}
+  m_LocalPosition: {x: -79.43, y: 7.91, z: 0}
   m_LocalScale: {x: 0.11462982, y: 0.11462982, z: 0.11462982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1387,6 +1409,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  textOutFadeEvent:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1256875420}
         m_TargetAssemblyTypeName: FadeExistence, Assembly-CSharp
         m_MethodName: FadeOUT
@@ -1482,7 +1507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the left mouse button again to throw it in the cauldron
+  m_text: Use the left mouse button again to throw it in the cauldron to make a potion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
@@ -1509,7 +1534,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 60.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1585,6 +1610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 0
+  fadeLengthDivider: 1
 --- !u!1 &1284865201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,7 +1657,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7764087, y: 1}
+    m_SensorSize: {x: 1.7764083, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2009,6 +2035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 0
+  fadeLengthDivider: 1
 --- !u!1 &1600374236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStartIN: 0
   onStartOUT: 0
+  fadeLengthDivider: 1
 --- !u!4 &1797916872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5162208431881012740, guid: 9cb27ae7387cfff4d855bacc94cfc164, type: 3}
