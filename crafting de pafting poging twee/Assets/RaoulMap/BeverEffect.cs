@@ -13,10 +13,14 @@ public class BeverEffect : AbstractMainEffect
 
     public override void DrinkEffect()
     {
-        Debug.Log("Speler drinkt bever");
-        if (!player.GetComponent<SpelerBever>())
+        //Debug.Log("Speler drinkt bever");
+        if (!player.GetComponent<PlayerBeverAbility>())
         {
-            var temp = player.AddComponent<SpelerBever>();
+            var temp = player.AddComponent<PlayerBeverAbility>();
+        }
+        else
+        {
+            player.GetComponent<PlayerBeverAbility>().langerBever();
         }
     }
 

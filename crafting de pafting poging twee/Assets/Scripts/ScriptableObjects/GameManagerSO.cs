@@ -16,6 +16,7 @@ public class GameManagerSO : ScriptableObject
     public float shrinkAbilityLength;   
     public float TeleportAbilityWaitLength;   
     public float VipAbilityLength;   
+    public float BeverAbilityLength;   
 
     public bool night;
 

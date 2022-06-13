@@ -20,5 +20,6 @@ MonoBehaviour:
   shrinkAbilityLength: 10
   TeleportAbilityWaitLength: 2
   VipAbilityLength: 10
+  BeverAbilityLength: 2
   night: 0
   player: {fileID: 0}
