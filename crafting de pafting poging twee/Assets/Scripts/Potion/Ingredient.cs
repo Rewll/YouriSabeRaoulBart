@@ -6,6 +6,7 @@ public class Ingredient : MonoBehaviour
 {
     [SerializeField] private PotionIngredient potionIngredientSO;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject Self;
     public IngredientGenerator ING;
     private PlayerStatsSO playerStatSORef;
 
@@ -40,6 +41,10 @@ public class Ingredient : MonoBehaviour
         {
             var Script = collision.gameObject.GetComponent<Cauldron>();
             Script.AddIngredient(potionIngredientSO);
+            if (Self) 
+            { 
+              Script.AddGameObject(Self);
+            }
             player.GetComponent<PlayerMovement>().inHand1 = false;
             if (ING) 
             { 

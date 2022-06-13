@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2370230274835287195}
   - component: {fileID: -1026905855197054100}
   m_Layer: 0
-  m_Name: AirFlower
+  m_Name: AirFlower copy
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionIngredientSO: {fileID: 11400000, guid: bea4d5cddc7073d499ca041e2f7811ba, type: 2}
   player: {fileID: 0}
-  Self: {fileID: 2294046731363325194, guid: 7cb9373218e07e54b9419fae38a43381, type: 3}
+  Self: {fileID: 2294046731363325194, guid: 2eb2cb942c0726641bf45d7b869b7709, type: 3}
   ING: {fileID: 0}
   hasBeenPickedUpByPlayer: 0
   wordtGegooid: 0

@@ -150,7 +150,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionIngredientSO: {fileID: 11400000, guid: e1fc3640287b54146a9d2f7d391cf2f5, type: 2}
   player: {fileID: 0}
+  Self: {fileID: 5998112330324144514, guid: ab7e4b9c7c45093429d7aec2afed1a4a, type: 3}
   ING: {fileID: 0}
+  hasBeenPickedUpByPlayer: 0
+  wordtGegooid: 0
+  MoveSpeed: 10
 --- !u!95 &3982366385158985696
 Animator:
   serializedVersion: 4

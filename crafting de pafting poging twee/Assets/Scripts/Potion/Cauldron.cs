@@ -11,18 +11,10 @@ public class Cauldron : MonoBehaviour
     private List<Color> IngredientColors = new List<Color>();
     private List<Effect> brewEffects = new List<Effect>();
     private List<string> brewGroup = new List<string>();
+    private List<GameObject> IngriedientObject = new List<GameObject>();
     [SerializeField]
     private Sprite[] couldronSprites;
     private int couldronSpriteNum = 0;
-
-    private void Update()
-    {
-        if (fireCode)
-        {
-            fireCode = false;
-            BrewPotion();
-        }
-    }
 
     public void BrewPotion()
     {
@@ -37,6 +29,11 @@ public class Cauldron : MonoBehaviour
         ResetBrewLists();
         couldronSpriteNum = 0;
         gameObject.GetComponent<SpriteRenderer>().sprite = couldronSprites[couldronSpriteNum];
+    }
+
+    public void AddGameObject(GameObject newGame) 
+    {
+        IngriedientObject.Add(newGame);
     }
 
     public void AddIngredient(PotionIngredient addedIngredient) 
@@ -147,6 +144,12 @@ public class Cauldron : MonoBehaviour
             var temp = newPotion.AddComponent<TutorialEffect>();
             return;
         }
+
+        if(IngriedientObject.Count > 0) 
+        {
+            var temp = newPotion.AddComponent<RecycleEffect>();
+            temp.GetComponent<RecycleEffect>().IngriedientFiller(IngriedientObject.ToArray());
+        }
     }
 
     private void ResetBrewLists() 
@@ -154,5 +157,6 @@ public class Cauldron : MonoBehaviour
         brewEffects = new List<Effect>();
         IngredientColors = new List<Color>();
         brewGroup = new List<string>();
+        IngriedientObject = new List<GameObject>();
     }
 }

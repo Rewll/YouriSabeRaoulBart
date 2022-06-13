@@ -12,6 +12,7 @@ TagManager:
   - Pointy
   - Fire
   - Tutorial
+  - MagnetAblity
   layers:
   - Default
   - TransparentFX
