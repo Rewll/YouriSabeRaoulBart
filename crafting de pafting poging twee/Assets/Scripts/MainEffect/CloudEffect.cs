@@ -23,7 +23,7 @@ public class CloudEffect : AbstractMainEffect
 
     public override void ThrowEffect()
     {
-        Instantiate(cloudPrefab, transform.position, transform.rotation);
+        Instantiate(cloudPrefab, transform.position, Quaternion.identity);
     }
 
 }
