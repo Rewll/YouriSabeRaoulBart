@@ -114,38 +114,66 @@ public class Cauldron : MonoBehaviour
     private void AddMainEffect(GameObject newPotion) 
     {
         //Main Effects
-        if (brewGroup.Contains("Steen") && brewGroup.Contains("Plant")) 
+        //names Water,Fire,Air,Bamboe,Kokos
+        if(brewGroup.Contains("Water")&& brewGroup.Contains("Fire")) 
         {
-            var temp = newPotion.AddComponent<FireEffect>();
-            return;
-        } //IK HOU HIERVAN ^
-        if(brewGroup.Contains("Water")&& brewGroup.Contains("Air")) 
-        {
-            var temp = newPotion.AddComponent<AirEffect>();
+            var temp = newPotion.AddComponent<TheFlowersAndTheBeesEffect>();
             return;
         }
-        if (brewGroup.Contains("Fire") && brewGroup.Contains("Air"))
-        {
-            var temp = newPotion.AddComponent<VuurEffect>();
-            return;
-        }
-        if (brewGroup.Contains("Darkness") && brewGroup.Contains("Fire"))
-        {
-            var temp = newPotion.AddComponent<DayNightEffect>();
-            return;
-        }
-        if (brewGroup.Contains("Darkness") && brewGroup.Contains("Air"))
+        if (brewGroup.Contains("Water") && brewGroup.Contains("Air"))
         {
             var temp = newPotion.AddComponent<CloudEffect>();
             return;
         }
-        if (brewGroup.Contains("Tutorial"))
+        if (brewGroup.Contains("Air") && brewGroup.Contains("Fire"))
         {
-            var temp = newPotion.AddComponent<TutorialEffect>();
+            var temp = newPotion.AddComponent<DayNightEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Water") && brewGroup.Contains("Bamboe"))
+        {
+            var temp = newPotion.AddComponent<BeverEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Air") && brewGroup.Contains("Bamboe"))
+        {
+            var temp = newPotion.AddComponent<SongFestivalEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Fire") && brewGroup.Contains("Bamboe"))
+        {
+            var temp = newPotion.AddComponent<RodentEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Kokos") && brewGroup.Contains("Bamboe"))
+        {
+            var temp = newPotion.AddComponent<TeleportMagnetEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Water") && brewGroup.Contains("Kokos"))
+        {
+            var temp = newPotion.AddComponent<TheFlowersAndTheBeesEffect>();
+            return;
+        }
+        if (brewGroup.Contains("Air") && brewGroup.Contains("Kokos"))
+        {
+            var temp = newPotion.AddComponent<HomeBringerEffect>();
             return;
         }
 
-        if(IngriedientObject.Count > 0) 
+        if (brewGroup.Contains("Fire") && brewGroup.Contains("Kokos"))
+        {
+            var temp = newPotion.AddComponent<VuurEffect>();
+            return;
+        }
+
+        if (brewGroup.Contains("Water") && brewGroup.Contains("Kokos"))
+        {
+            var temp = newPotion.AddComponent<TheFlowersAndTheBeesEffect>();
+            return;
+        }
+
+        if (IngriedientObject.Count > 0) 
         {
             var temp = newPotion.AddComponent<RecycleEffect>();
             temp.GetComponent<RecycleEffect>().IngriedientFiller(IngriedientObject.ToArray());
