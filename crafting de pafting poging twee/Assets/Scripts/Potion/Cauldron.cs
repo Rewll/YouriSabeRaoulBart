@@ -163,7 +163,7 @@ public class Cauldron : MonoBehaviour
 
         if (brewGroup.Contains("Fire") && brewGroup.Contains("Kokos"))
         {
-            var temp = newPotion.AddComponent<VuurEffect>();
+            var temp = newPotion.AddComponent<FireEffect>();
             return;
         }
 

@@ -15,7 +15,7 @@ public class HotLava : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!spelerVuur)
+        if (!spelerVuur && collision.CompareTag("Player"))
         {
             collision.transform.position = new Vector2(0, 0);
         }

@@ -14,6 +14,7 @@ public class NightCheck : MonoBehaviour
     private void Awake()
     {
         managerSO = Resources.Load<GameManagerSO>("ScriptableObjects/GameManagerSO");
+        managerSO.night= false;
     }
 
     private void Update()

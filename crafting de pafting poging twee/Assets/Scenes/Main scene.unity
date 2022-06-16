@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 111964959}
   - component: {fileID: 111964958}
   - component: {fileID: 111964957}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &111964959
 SpriteRenderer:
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 297835613}
   - component: {fileID: 297835612}
   - component: {fileID: 297835611}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &297835613
 SpriteRenderer:
@@ -1146,11 +1146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.9
+      value: -13.7
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.5
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1200,7 +1200,7 @@ PrefabInstance:
     - target: {fileID: 3084777974558882233, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: ingredientPrefab
       value: 
-      objectReference: {fileID: 2294046731363325194, guid: 7cb9373218e07e54b9419fae38a43381, type: 3}
+      objectReference: {fileID: 2294046731363325194, guid: 2eb2cb942c0726641bf45d7b869b7709, type: 3}
     - target: {fileID: 3084777974558882234, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_Name
       value: AirFlowerFabriek
@@ -1219,11 +1219,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.2
+      value: -13.3
       objectReference: {fileID: 0}
     - target: {fileID: 3084777974558882239, guid: fff2994d405a3bb438c4960bc36960d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1394,7 +1394,7 @@ GameObject:
   - component: {fileID: 638898450}
   - component: {fileID: 638898449}
   - component: {fileID: 638898448}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1453,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &638898450
 SpriteRenderer:
@@ -1519,7 +1519,7 @@ GameObject:
   - component: {fileID: 678736322}
   - component: {fileID: 678736321}
   - component: {fileID: 678736320}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1578,7 +1578,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &678736322
 SpriteRenderer:
@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 866361723}
   - component: {fileID: 866361722}
   - component: {fileID: 866361721}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1861,7 +1861,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &866361723
 SpriteRenderer:
@@ -1969,6 +1969,10 @@ PrefabInstance:
     - target: {fileID: 7681107830504563783, guid: 0fb4a41ce474fee439237ecb21f55b82, type: 3}
       propertyPath: m_Name
       value: Keter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681107830504563783, guid: 0fb4a41ce474fee439237ecb21f55b82, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb4a41ce474fee439237ecb21f55b82, type: 3}
@@ -2129,7 +2133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &968556512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3732,7 +3736,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7792642, y: 1}
+    m_SensorSize: {x: 1.7756459, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4078,9 +4082,9 @@ MonoBehaviour:
   dayActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349820791}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1349820796}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4093,9 +4097,9 @@ MonoBehaviour:
   nightActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349820791}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1349820796}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7120,7 +7124,7 @@ GameObject:
   - component: {fileID: 1450320909}
   - component: {fileID: 1450320908}
   - component: {fileID: 1450320907}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7179,7 +7183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &1450320909
 SpriteRenderer:
@@ -7985,7 +7989,7 @@ GameObject:
   - component: {fileID: 1690131052}
   - component: {fileID: 1690131051}
   - component: {fileID: 1690131050}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8044,7 +8048,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &1690131052
 SpriteRenderer:
@@ -11845,7 +11849,7 @@ GameObject:
   - component: {fileID: 1868667609}
   - component: {fileID: 1868667608}
   - component: {fileID: 1868667607}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11904,7 +11908,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &1868667609
 SpriteRenderer:
@@ -12106,6 +12110,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1933601991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2231335010725350131, guid: 85f3bca5b9444c7408e9220ba1e37294, type: 3}
+  m_PrefabInstance: {fileID: 465929571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933601994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933601991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefd22422ebbc424e802e8a7b9c3fb13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1938103695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12566,11 +12587,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7521998774730497403, guid: 170c69a49d13b134b997372a78a8bfe8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.877333
+      value: 10.48
       objectReference: {fileID: 0}
     - target: {fileID: 7521998774730497403, guid: 170c69a49d13b134b997372a78a8bfe8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.990618
+      value: -14.36
       objectReference: {fileID: 0}
     - target: {fileID: 7521998774730497403, guid: 170c69a49d13b134b997372a78a8bfe8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12749,18 +12770,6 @@ MonoBehaviour:
   dayActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349820791}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1270710361}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -12776,18 +12785,6 @@ MonoBehaviour:
   nightActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349820791}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1270710361}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -13077,7 +13074,7 @@ GameObject:
   - component: {fileID: 7894995305032617935}
   - component: {fileID: 7894995305032617928}
   - component: {fileID: 7894995305032617929}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13111,7 +13108,7 @@ GameObject:
   - component: {fileID: 7894995305147169399}
   - component: {fileID: 7894995305147169396}
   - component: {fileID: 7894995305147169398}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13142,7 +13139,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!4 &7894995305147169397
 Transform:
@@ -13264,7 +13261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7894995305234616420}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprites_Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13297,7 +13294,7 @@ GameObject:
   - component: {fileID: 7894995305252890098}
   - component: {fileID: 7894995305252890111}
   - component: {fileID: 7894995305252890108}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13394,7 +13391,7 @@ GameObject:
   - component: {fileID: 7894995305337269983}
   - component: {fileID: 7894995305337269980}
   - component: {fileID: 7894995305337269982}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13425,7 +13422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!4 &7894995305337269981
 Transform:
@@ -13611,7 +13608,7 @@ GameObject:
   - component: {fileID: 7894995305528485689}
   - component: {fileID: 7894995305528485690}
   - component: {fileID: 7894995305528485691}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13629,7 +13626,7 @@ GameObject:
   - component: {fileID: 7894995305528521075}
   - component: {fileID: 7894995305528521084}
   - component: {fileID: 7894995305528521085}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13818,7 +13815,7 @@ GameObject:
   - component: {fileID: 7894995305580798607}
   - component: {fileID: 7894995305580798600}
   - component: {fileID: 7894995305580798601}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13876,7 +13873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7894995305623981705}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprites_Dry_Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13961,7 +13958,7 @@ GameObject:
   - component: {fileID: 7894995305961808492}
   - component: {fileID: 7894995305961808489}
   - component: {fileID: 7894995305961808494}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14034,7 +14031,7 @@ GameObject:
   - component: {fileID: 7894995306204838982}
   - component: {fileID: 7894995306204838983}
   - component: {fileID: 7894995306204838977}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14117,7 +14114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!212 &7894995306338563648
 SpriteRenderer:
@@ -14195,7 +14192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!114 &7894995306338563651
 MonoBehaviour:
@@ -14237,7 +14234,7 @@ GameObject:
   - component: {fileID: 7894995306338563648}
   - component: {fileID: 7894995306338563649}
   - component: {fileID: 7894995306338563651}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14271,7 +14268,7 @@ GameObject:
   - component: {fileID: 7894995306520362818}
   - component: {fileID: 7894995306520362819}
   - component: {fileID: 7894995306520362829}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14354,7 +14351,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!114 &7894995306520362829
 MonoBehaviour:
@@ -14463,7 +14460,7 @@ GameObject:
   - component: {fileID: 7894995306645976080}
   - component: {fileID: 7894995306645976081}
   - component: {fileID: 7894995306645976083}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14482,7 +14479,7 @@ GameObject:
   - component: {fileID: 7894995306685573799}
   - component: {fileID: 7894995306685573796}
   - component: {fileID: 7894995306685573798}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14513,7 +14510,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!4 &7894995306685573797
 Transform:
@@ -14673,7 +14670,7 @@ GameObject:
   - component: {fileID: 7894995306694116140}
   - component: {fileID: 7894995306694116137}
   - component: {fileID: 7894995306694116142}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14746,7 +14743,7 @@ GameObject:
   - component: {fileID: 7894995306780563718}
   - component: {fileID: 7894995306780563719}
   - component: {fileID: 7894995306780563713}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14829,7 +14826,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!4 &7894995306876989617
 Transform:
@@ -14935,7 +14932,7 @@ GameObject:
   - component: {fileID: 7894995306876989617}
   - component: {fileID: 7894995306876989618}
   - component: {fileID: 7894995306876989619}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14954,7 +14951,7 @@ GameObject:
   - component: {fileID: 7894995306949493415}
   - component: {fileID: 7894995306949493412}
   - component: {fileID: 7894995306949493414}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14985,7 +14982,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 6}
+  m_Size: {x: 6, y: 4.31}
   m_EdgeRadius: 0
 --- !u!4 &7894995306949493413
 Transform:
@@ -15078,7 +15075,7 @@ GameObject:
   - component: {fileID: 7894995306969009045}
   - component: {fileID: 7894995306969009046}
   - component: {fileID: 7894995306969009047}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15256,7 +15253,7 @@ GameObject:
   - component: {fileID: 7894995307024304964}
   - component: {fileID: 7894995307024304961}
   - component: {fileID: 7894995307024304966}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15315,7 +15312,7 @@ GameObject:
   - component: {fileID: 7894995307025783706}
   - component: {fileID: 7894995307025783783}
   - component: {fileID: 7894995307025783780}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15426,7 +15423,7 @@ GameObject:
   - component: {fileID: 7894995307082556476}
   - component: {fileID: 7894995307082556478}
   - component: {fileID: 7894995307082556479}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_On
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15512,7 +15509,7 @@ GameObject:
   - component: {fileID: 7894995307088648427}
   - component: {fileID: 7894995307088648436}
   - component: {fileID: 7894995307088648437}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15640,7 +15637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7894995307112306320}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

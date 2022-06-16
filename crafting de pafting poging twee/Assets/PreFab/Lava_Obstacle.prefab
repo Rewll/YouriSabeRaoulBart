@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6255628909761073886}
   - component: {fileID: 6255628909761073887}
   - component: {fileID: 6255628909761073885}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6255628909819669963}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprites_Dry_Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 6255628909877526989}
   - component: {fileID: 6255628909877526986}
   - component: {fileID: 6255628909877526987}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 6255628909889096224}
   - component: {fileID: 6255628909889096239}
   - component: {fileID: 6255628909889096238}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 6255628909913068081}
   - component: {fileID: 6255628909913068094}
   - component: {fileID: 6255628909913068095}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 6255628909913162875}
   - component: {fileID: 6255628909913162872}
   - component: {fileID: 6255628909913162873}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 6255628910018806062}
   - component: {fileID: 6255628910018806059}
   - component: {fileID: 6255628910018806060}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 6255628910171352190}
   - component: {fileID: 6255628910171352191}
   - component: {fileID: 6255628910171352189}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6255628910223815462}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprites_Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 6255628910311201077}
   - component: {fileID: 6255628910311201078}
   - component: {fileID: 6255628910311201076}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 6255628910427876493}
   - component: {fileID: 6255628910427876490}
   - component: {fileID: 6255628910427876491}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 6255628910641155485}
   - component: {fileID: 6255628910641155486}
   - component: {fileID: 6255628910641155484}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1277,7 +1277,7 @@ GameObject:
   - component: {fileID: 6255628910744471216}
   - component: {fileID: 6255628910744471229}
   - component: {fileID: 6255628910744471230}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   - component: {fileID: 6255628910808480324}
   - component: {fileID: 6255628910808480325}
   - component: {fileID: 6255628910808480323}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1514,7 @@ GameObject:
   - component: {fileID: 6255628910905625061}
   - component: {fileID: 6255628910905625062}
   - component: {fileID: 6255628910905625060}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 6255628910911692910}
   - component: {fileID: 6255628910911692907}
   - component: {fileID: 6255628910911692908}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1749,7 @@ GameObject:
   - component: {fileID: 6255628910943098706}
   - component: {fileID: 6255628910943098707}
   - component: {fileID: 6255628910943098705}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,7 +1848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6255628911030384082}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   - component: {fileID: 6255628911037266857}
   - component: {fileID: 6255628911037266870}
   - component: {fileID: 6255628911037266871}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1996,7 +1996,7 @@ GameObject:
   - component: {fileID: 6255628911043348350}
   - component: {fileID: 6255628911043348348}
   - component: {fileID: 6255628911043348349}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_On
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2097,7 +2097,7 @@ GameObject:
   - component: {fileID: 6255628911117007064}
   - component: {fileID: 6255628911117007013}
   - component: {fileID: 6255628911117007014}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2208,7 +2208,7 @@ GameObject:
   - component: {fileID: 6255628911118411782}
   - component: {fileID: 6255628911118411779}
   - component: {fileID: 6255628911118411780}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2319,7 +2319,7 @@ GameObject:
   - component: {fileID: 6255628911156963543}
   - component: {fileID: 6255628911156963540}
   - component: {fileID: 6255628911156963541}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2431,7 +2431,7 @@ GameObject:
   - component: {fileID: 6255628911178605029}
   - component: {fileID: 6255628911178605030}
   - component: {fileID: 6255628911178605028}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2555,7 +2555,7 @@ GameObject:
   - component: {fileID: 6255628911265731571}
   - component: {fileID: 6255628911265731568}
   - component: {fileID: 6255628911265731569}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2667,7 +2667,7 @@ GameObject:
   - component: {fileID: 6255628911403081476}
   - component: {fileID: 6255628911403081477}
   - component: {fileID: 6255628911403081475}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2792,7 +2792,7 @@ GameObject:
   - component: {fileID: 6255628911430383048}
   - component: {fileID: 6255628911430383049}
   - component: {fileID: 6255628911430383063}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2917,7 @@ GameObject:
   - component: {fileID: 6255628911622396928}
   - component: {fileID: 6255628911622396929}
   - component: {fileID: 6255628911622396943}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3042,7 +3042,7 @@ GameObject:
   - component: {fileID: 6255628911804192002}
   - component: {fileID: 6255628911804192003}
   - component: {fileID: 6255628911804192001}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Lava_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
