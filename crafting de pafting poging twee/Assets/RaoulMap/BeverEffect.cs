@@ -5,10 +5,12 @@ using UnityEngine;
 public class BeverEffect : AbstractMainEffect
 {
     private GameObject player;
+    private GameObject boom;
 
     public void Awake()
     {
         player = GameObject.Find("Player");
+        boom = Resources.Load<GameObject>("Prefabs/Boom");
     }
 
     public override void DrinkEffect()
@@ -26,6 +28,6 @@ public class BeverEffect : AbstractMainEffect
 
     public override void ThrowEffect()
     {
-        
+        Instantiate(boom, transform.position, Quaternion.identity);
     }
 }
