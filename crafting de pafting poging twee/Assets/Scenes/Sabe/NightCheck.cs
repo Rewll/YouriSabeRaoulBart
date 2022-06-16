@@ -23,6 +23,7 @@ public class NightCheck : MonoBehaviour
             nightToggle = false;
             nightCheck = !nightCheck;
             nightActivate.Invoke();
+            StartCoroutine(NightTimer());
         }
         else if(!nightToggle && !managerSO.night)
         {
@@ -43,5 +44,11 @@ public class NightCheck : MonoBehaviour
         {
             dayActivate.Invoke();
         }
+    }
+
+    private IEnumerator NightTimer()
+    {
+        yield return new WaitForSeconds(35);
+        dayActivate.Invoke();
     }
 }
