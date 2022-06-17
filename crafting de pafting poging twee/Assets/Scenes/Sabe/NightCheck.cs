@@ -49,7 +49,7 @@ public class NightCheck : MonoBehaviour
 
     private IEnumerator NightTimer()
     {
-        yield return new WaitForSeconds(35);
+        yield return new WaitForSeconds(15);
         dayActivate.Invoke();
     }
 }
