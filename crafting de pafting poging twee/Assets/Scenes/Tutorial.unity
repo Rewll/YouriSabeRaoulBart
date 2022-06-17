@@ -1568,7 +1568,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the left mouse button again to throw it in the cauldron to make a potion
+  m_text: Use the left mouse button again to throw it in the cauldron to make a potion,
+    you can also mix ingredients
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
@@ -1595,7 +1596,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.1
+  m_fontSize: 52.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1718,7 +1719,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7796419, y: 1}
+    m_SensorSize: {x: 1.7788461, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2042,7 +2043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the left mouse button to grab an ingredient for your potions
+  m_text: Use the left mouse button to grab ingredients for your potions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
   m_sharedMaterial: {fileID: 5434787826241193292, guid: 2f97fbfab576ff041bfc0f904e3b04c0, type: 2}
@@ -2069,7 +2070,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.85
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
