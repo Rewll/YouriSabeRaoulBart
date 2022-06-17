@@ -172,7 +172,7 @@ public class Cauldron : MonoBehaviour
             var temp = newPotion.AddComponent<TheFlowersAndTheBeesEffect>();
             return;
         }
-        if (brewGroup.Contains("Tutorial"))
+        if (brewGroup.Contains("Tutorial") && brewGroup.Contains("Air"))
         {
             var temp = newPotion.AddComponent<TutorialEffect>();
             return;

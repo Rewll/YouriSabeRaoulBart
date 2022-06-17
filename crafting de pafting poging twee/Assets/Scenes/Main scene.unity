@@ -2257,7 +2257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &968556512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2356,6 +2356,22 @@ PrefabInstance:
     - target: {fileID: 1720215721248749205, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720215721610356094, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
+      propertyPath: triggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1788682176}
+    - target: {fileID: 1720215721610356094, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
+      propertyPath: triggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1788682176}
+    - target: {fileID: 1720215721610356094, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
+      propertyPath: triggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720215721610356094, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
+      propertyPath: triggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 1720215721828896067, guid: d7f957bccddb7aa4992e686a15c0b086, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3996,7 +4012,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7786459, y: 1}
+    m_SensorSize: {x: 1.7801303, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
